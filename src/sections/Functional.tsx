@@ -3,6 +3,8 @@ import hotjarimg from "@/assets/images/Hotjarimg.png";
 import slacklogo from "@/assets/images/slacklogo.png";
 import performanceimg from "@/assets/images/Performance.png";
 import slackmessageimg from "@/assets/images/SlackMessage.png";
+import aiperformance from "@/assets/images/AIPerformance.png";
+import aiperformanceimg from "@/assets/images/AIperformance.png";
 export default function Functional() {
     return (
         <>
@@ -28,7 +30,9 @@ export default function Functional() {
                                                 alt="Functional Image"
                                                 className="inline-block h-6 object-cover"
                                             />{" "}
-                                            <i>slack notifications </i>
+                                            <u>
+                                                <i>slack notifications</i>
+                                            </u>
                                         </b>{" "}
                                         when your AI product fails
                                     </p>
@@ -50,9 +54,9 @@ export default function Functional() {
                                 </div>
                                 <div className="pt-6">
                                     <img
-                                        src={performanceimg.src}
-                                        alt="Functional Image"
-                                        className="w-full h-48 md:h-64 object-cover"
+                                        src={aiperformance.src}
+                                        alt="AI Performance Image"
+                                        className="w-full h-56 md:h-64 object-cover"
                                     />
                                 </div>
                             </div>
@@ -71,7 +75,7 @@ export default function Functional() {
                                     <img
                                         src={performanceimg.src}
                                         alt="Functional Image"
-                                        className="w-full h-48 md:h-72 object-cover"
+                                        className="w-full h-56 md:h-72 object-cover"
                                     />
                                 </div>
                             </div>
@@ -90,7 +94,7 @@ export default function Functional() {
                                     <img
                                         src={slackmessageimg.src}
                                         alt="Functional Image"
-                                        className="w-full h-48 md:h-64 object-cover"
+                                        className="w-full h-56 md:h-64 object-cover"
                                     />
                                 </div>
                             </div>
