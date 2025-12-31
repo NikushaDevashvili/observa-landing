@@ -15,8 +15,7 @@ export default function Functional() {
                         <div className="border-x border border-gray-200 min-h-[24rem]">
                             <div className="flex flex-col items mt-16 mx-20">
                                 <h1
-                                    className="text-5xl md:text-6xl lg:text-5xl text-center mt-20 font-medium break-normal mx-auto tracking-custom 
-"
+                                    className="text-5xl md:text-6xl lg:text-5xl text-center mt-20 font-medium break-normal mx-auto tracking-custom"
                                 >
                                     FIND ISSUES
                                     <br />

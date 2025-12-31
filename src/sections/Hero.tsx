@@ -48,8 +48,7 @@ export default function Hero() {
                 </div> */}
                     <div className="py-16 lg:px-32">
                         <h1
-                            className="text-5xl md:text-6xl lg:text-5xl lg:font-roman text-left mt-20 font-medium break-normal w-full tracking-custom 
-"
+                            className="text-5xl md:text-6xl lg:text-5xl lg:font-roman text-left mt-20 font-medium break-normal w-full tracking-custom"
                         >
                             AI failures happen.
                             <br />

@@ -42,7 +42,7 @@ export default function TrackersSection() {
                                 Catch Silent Failures
                             </h1>
                         </div>
-                        <div className="border border-gray-200 border-t-0 border-b-0"></div>
+                        <div className="border border-gray-200 border-t-0"></div>
                         <div className="py-6 ">
                             <h1 className="text-md py-6 px-8">
                                 Don&apos;t wait for user complaints.
