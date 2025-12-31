@@ -6,7 +6,7 @@ import { useModal } from "@/components/ModalContext";
 
 const navLinks = [
     { label: "Home", href: "#" },
-    { label: "Features", href: "#features" },
+    { label: "Feature", href: "#features" },
     { label: "Integrations", href: "#integrations" },
     { label: "FAQs", href: "#faqs" },
 ];

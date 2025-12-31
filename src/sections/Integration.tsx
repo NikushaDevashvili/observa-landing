@@ -8,24 +8,18 @@ import {
     Activity,
     BarChart3,
     Bell,
-    BookCheck,
-    ChartPie,
     DollarSign,
-    FolderSync,
-    Goal,
     Plug,
     ShieldCheck,
-    Users,
-    Zap,
 } from "lucide-react";
 
 export default function Integration() {
     return (
         <>
             <section>
-                <div className="container-custom border-gray-200 border-x border-solid ">
+                <div className="container-custom border-blue-50 border-[41px] border-solid ">
                     <div className=" border-gray-200 bg-white border-x border-l-0 border-r-0  border-solid p-0">
-                        <div className="border-x border border-gray-200 min-h-[24rem]">
+                        <div className="min-h-[24rem]">
                             <div className="flex flex-col items-center gap-4 mt-24 mx-20">
                                 <h1
                                     className="text-4xl md:text-6xl lg:text-5xl text-center mt8 font-medium break-normal mx-auto tracking-custom 

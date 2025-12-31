@@ -3,14 +3,13 @@ import {
     LucideDollarSign,
     LucideMountain,
     MessagesSquareIcon,
-    User,
     UsersIcon,
 } from "lucide-react";
 
 export default function Summaries() {
     return (
         <>
-            <div className="border-y min-h-[4rem]"></div>
+            <div className="border-y h-[140px]"></div>
             <section>
                 <div className="container-custom-spatial">
                     <div className="border border-t-0 flex flex-col items-center py-24 px-4">
@@ -44,7 +43,7 @@ export default function Summaries() {
                             <div className="p-4 py-8 border border-y-0 bg-white">
                                 <h1 className="text-xl">🟢 Wins</h1>
                                 <p>
-                                    Users liked the assistant's tone and
+                                    Users liked the assistant&apos;s tone and
                                     appreciated the life advice.
                                 </p>
                             </div>
@@ -112,7 +111,6 @@ export default function Summaries() {
                     </div>
                 </div>
             </section>
-            <div className="border-y min-h-[4rem]"></div>
         </>
     );
 }

@@ -1,11 +1,10 @@
-import slackmessageimg from "@/assets/images/SlackMessage.png";
 import monitorimg from "@/assets/images/MonitorImg.png";
 import slackalertimg from "@/assets/images/Slackalerts.png";
 
 export default function TrackersSection() {
     return (
-        <section className="bg-slate-50">
-            <div className="border-y min-h-[6rem] bg-slate-50"></div>
+        <section className="bg-white">
+            <div className="border-y h-[140px] bg-white text-white"></div>
             <div className="container-custom-spatial border border-0 bg-white">
                 <div className="grid grid-grid-cols-1 lg:grid-cols-2 gap-16 ">
                     <div className="border border-t-0 items-center">
@@ -16,7 +15,7 @@ export default function TrackersSection() {
                                 className="w-full h-96 md:h-96 object-cover"
                             />
                         </div>
-                        <div className="border border-gray-200 border-t-0"></div>
+                        <div className="border border-gray-200 border-x"></div>
                         <div className="py-8">
                             <h1 className="text-2xl px-8">Set Trackers</h1>
                         </div>
@@ -43,19 +42,20 @@ export default function TrackersSection() {
                                 Catch Silent Failures
                             </h1>
                         </div>
-                        <div className="border border-gray-200 border-t-0"></div>
+                        <div className="border border-gray-200 border-t-0 border-b-0"></div>
                         <div className="py-6 ">
                             <h1 className="text-md py-6 px-8">
-                                Don't wait for user complaints. Automatically
-                                detect "silent" errors like context drops and
-                                logic failures, and get the diagnostic data you
-                                need to fix them immediately.
+                                Don&apos;t wait for user complaints.
+                                Automatically detect &quot;silent&quot; errors
+                                like context drops and logic failures, and get
+                                the diagnostic data you need to fix them
+                                immediately.
                             </h1>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="border-y min-h-[6rem] bg-slate-50"></div>
+            <div className="border-y h-[140px] bg-white text-white"></div>
         </section>
     );
 }
