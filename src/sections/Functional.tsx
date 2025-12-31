@@ -4,7 +4,6 @@ import slacklogo from "@/assets/images/slacklogo.png";
 import performanceimg from "@/assets/images/Performance.png";
 import slackmessageimg from "@/assets/images/SlackMessage.png";
 import aiperformance from "@/assets/images/AIPerformance.png";
-import aiperformanceimg from "@/assets/images/AIperformance.png";
 export default function Functional() {
     return (
         <>
@@ -13,7 +12,7 @@ export default function Functional() {
                     <div className=" border-gray-200 bg-white border-x border-l-0 border-r-0  border-solid p-0">
                         <div className="border-x min-h-[4rem]"></div>
                         <div className="border-x border border-gray-200 min-h-[24rem]">
-                            <div className="flex flex-col items mt-16 mx-20">
+                            <div className="flex flex-col mt-16 mx-20">
                                 <h1
                                     className="text-5xl md:text-6xl lg:text-5xl text-center mt-20 font-medium break-normal mx-auto tracking-custom"
                                 >
