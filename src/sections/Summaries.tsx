@@ -25,7 +25,7 @@ export default function Summaries() {
                     </div>
                     <div className="border py-12 border-y-0 bg-gradient-to-b from-slate-50 to-blue-50">
                         {" "}
-                        <div className="max-w-4xl mx-auto p-8  bg-slate-100">
+                        <div className="max-w-4xl mx-auto p-2 md:p-8  bg-slate-100">
                             <div className="p-4 border pb-8 bg-white">
                                 <div className="flex flex-row justify-between items-center pt-8  ">
                                     <h2 className="text-2xl">

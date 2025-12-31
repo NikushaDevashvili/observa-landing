@@ -7,7 +7,7 @@ export default function TrackersSection() {
             <div className="border-y h-[140px] bg-white text-white"></div>
             <div className="container-custom-spatial border border-0 bg-white">
                 <div className="grid grid-grid-cols-1 lg:grid-cols-2 gap-16 ">
-                    <div className="border border-t-0 border-b-0 items-center">
+                    <div className="border border-t-0 items-center">
                         <div className="min-h-[40rem] sm:min-h-[20rem]">
                             <img
                                 src={monitorimg.src}
@@ -28,12 +28,12 @@ export default function TrackersSection() {
                             </h1>
                         </div>
                     </div>
-                    <div className="border border-t-0 border-b-0 items-center">
+                    <div className="border border-t-0 borde items-center">
                         <div className="">
                             <img
                                 src={slackalertimg.src}
                                 alt="Functional Image"
-                                className="w-full h-96 md:h-69 object-cover"
+                                className="w-full h-72 md:h-69 object-cover"
                             />
                         </div>
                         <div className="border border-gray-200 border-t-0"></div>
