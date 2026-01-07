@@ -7,9 +7,10 @@ interface BookingProps {
     embedType?: "inline" | "popup" | "popupButton";
 }
 
-export default function Booking({ 
-    calLink = process.env.NEXT_PUBLIC_CAL_LINK || "nika-devashvili-38o3wu",
-    embedType = "inline"
+export default function Booking({
+    calLink = process.env.NEXT_PUBLIC_CAL_LINK ||
+        "nika-devashvili-38o3wu/quick-demo-walkthrough",
+    embedType = "inline",
 }: BookingProps) {
     // Load Cal.com embed script for popup modes
     useEffect(() => {
@@ -32,8 +33,8 @@ export default function Booking({
     }, [embedType]);
 
     // Construct the Cal.com embed URL
-    const calUrl = `https://cal.com/${nika-devashvili-38o3wu/quick-demo-walkthrough}`;
-    
+    const calUrl = `https://cal.com/${calLink}`;
+
     // For inline embed, use iframe
     if (embedType === "inline") {
         return (
@@ -86,4 +87,3 @@ export default function Booking({
         </section>
     );
 }
-
