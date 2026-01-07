@@ -17,7 +17,7 @@ export default function MyApp() {
     }, []);
 
     return (
-        <section className="py-24">
+        <section className="py-32">
             <div className="container">
                 <div className="flex justify-center mb-8">
                     <h2 className="text-4xl md:text-5xl font-medium text-center">
@@ -25,7 +25,7 @@ export default function MyApp() {
                     </h2>
                 </div>
                 <div className="flex justify-center">
-                    <div className="w-full max-w-4xl bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div className="w-full max-w-4xl bg-white border border-gray-200 overflow-hidden p-6">
                         <Cal
                             namespace="quick-demo-walkthrough"
                             calLink="nika-devashvili-38o3wu/quick-demo-walkthrough"
