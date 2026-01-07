@@ -19,12 +19,12 @@ export default function MyApp() {
     return (
         <section className="py-32">
             <div className="container-custom-spatial">
-                <div className="flex justify-center mb-8">
-                    <h2 className="text-4xl md:text-5xl font-medium text-center">
-                        Book a <span className="text-slate-600">Demo</span>
-                    </h2>
-                </div>
                 <div className="flex justify-center">
+                    <div className="flex justify-center mb-8">
+                        <h2 className="text-4xl md:text-5xl font-medium text-center">
+                            Book a <span className="text-slate-600">Demo</span>
+                        </h2>
+                    </div>
                     <div className="w-full bg-white border border-gray-200 overflow-hidden p-6">
                         <Cal
                             namespace="quick-demo-walkthrough"
