@@ -33,7 +33,8 @@ export default function Booking({
     }, [embedType]);
 
     // Construct the Cal.com embed URL for iframe
-    const calUrl = `https://cal.com/${calLink}/embed`;
+    // Use the /embed/ prefix to avoid occasional 404s on some Cal setups
+    const calUrl = `https://cal.com/embed/${calLink}`;
 
     // For inline embed, use iframe with proper attributes
     if (embedType === "inline") {
@@ -46,7 +47,10 @@ export default function Booking({
                         </h2>
                     </div>
                     <div className="flex justify-center">
-                        <div className="w-full max-w-4xl bg-white rounded-xl shadow-lg overflow-hidden" style={{ minHeight: "700px" }}>
+                        <div
+                            className="w-full max-w-4xl bg-white rounded-xl shadow-lg overflow-hidden"
+                            style={{ minHeight: "700px" }}
+                        >
                             <iframe
                                 src={calUrl}
                                 style={{
