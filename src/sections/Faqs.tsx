@@ -88,7 +88,7 @@ export default function Faqs() {
                                         exit={{ height: 0, marginTop: 0 }}
                                         className={twMerge("overflow-hidden")}
                                     >
-                                        <p className="text-black/50">
+                                        <p className="text-foreground/70">
                                             {faq.answer}
                                         </p>
                                     </motion.div>

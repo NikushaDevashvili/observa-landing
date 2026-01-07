@@ -17,14 +17,17 @@ import traceview from "@/assets/images/trace-view.png";
 export default function Integration() {
     return (
         <>
-            <section id="integrations">
-                <div className="container-custom-spatial border-x">
-                    <div className=" border-gray-200 bg-white border-x border-l-0 border-r-0  border-solid p-0">
+            <section
+                id="integrations"
+                className="bg-background text-foreground"
+            >
+                <div className="container-custom-spatial border-x border-border">
+                    <div className=" border-border bg-background border-x border-l-0 border-r-0  border-solid p-0">
                         <div className="min-h-[24rem]">
                             <div className="flex flex-col items-center gap-4  mx-1 md:mx-20">
                                 <h1 className="text-4xl md:text-6xl lg:text-5xl text-center mt-36 font-medium break-normal mx-auto tracking-custom">
                                     Best practice monitoring <br />{" "}
-                                    <span className="text-slate-600">
+                                    <span className="text-foreground/70">
                                         with easy SDK installation{" "}
                                     </span>
                                 </h1>
@@ -68,7 +71,7 @@ export default function Integration() {
                                                 </Accordion>
                                             </div>
                                             {/* Media */}
-                                            <div className="hidden md:flex w-full h-full rounded-xl overflow-hidden items-center justify-center">
+                                            <div className="hidden md:flex w-full h-full rounded-xl overflow-hidden items-center justify-center border border-border/70 bg-muted/50">
                                                 <Image
                                                     src={traceview.src}
                                                     alt="Observa trace interface showing error monitoring, spans, tool calls, and LLM interactions"
@@ -84,7 +87,7 @@ export default function Integration() {
                         </div>
                     </div>
                 </div>
-                <div className="border-y h-[140px] bg-white text-white"></div>
+                <div className="border-y h-[140px] bg-background text-foreground"></div>
             </section>
         </>
     );

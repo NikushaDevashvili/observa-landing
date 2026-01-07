@@ -30,7 +30,7 @@ export default function RootLayout({
                 )}
             </head>
             <body
-                className={`${jetbrainsMono.variable} font-sans antialiased bg-white  text-black`}
+                className={`${jetbrainsMono.variable} font-sans antialiased bg-background text-foreground`}
             >
                 <ThemeProvider
                     attribute="class"

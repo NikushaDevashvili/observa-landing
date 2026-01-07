@@ -19,8 +19,8 @@ export default function Features() {
     const isInView3 = useInView(imageRef3, { amount: 0.2 });
 
     return (
-        <section>
-            <div className="container-custom  border-gray-200 border-x border-y  border-solid">
+        <section className="bg-background text-foreground">
+            <div className="container-custom  border-border border-x border-y  border-solid">
                 {/* Section 2 moved to the top */}
                 <motion.div
                     ref={imageRef1}
@@ -35,7 +35,7 @@ export default function Features() {
                         Monitor your analytics{" "}
                         <span className="text-amber-950">24/7</span>
                     </h2>
-                    <p className="mt-4 sm:max-w-md md:max-w-2xl lg:max-w-2xl m-auto text-black/50">
+                    <p className="mt-4 sm:max-w-md md:max-w-2xl lg:max-w-2xl m-auto text-foreground/70">
                         Ask any question, get answer that combines Google
                         Analytics, MS Clarity, Hotjar and other analytical data
                         into one actionable insight
@@ -81,7 +81,7 @@ export default function Features() {
                             Get Instant{" "}
                             <span className="text-amber-950">Answers</span>
                         </h2>
-                        <p className="mt-4 sm:max-w-md md:max-w-2xl lg:max-w-2xl m-auto text-black/50">
+                        <p className="mt-4 sm:max-w-md md:max-w-2xl lg:max-w-2xl m-auto text-foreground/70">
                             Ask any question, get answer that combines Google
                             Analytics, MS Clarity, Hotjar and other analytical
                             data into one actionable insight
@@ -124,7 +124,7 @@ export default function Features() {
                         Identify Critical{" "}
                         <span className="text-amber-950">Drop-Offs</span>
                     </h2>
-                    <p className="mt-4 sm:max-w-md md:max-w-2xl lg:max-w-2xl m-auto text-black/50">
+                    <p className="mt-4 sm:max-w-md md:max-w-2xl lg:max-w-2xl m-auto text-foreground/70">
                         Discover where users abandon the journey — with data
                         synthesized across all your tracking tools in one visual
                         snapshot.

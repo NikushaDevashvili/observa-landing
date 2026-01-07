@@ -76,9 +76,9 @@ const legalLinks: Array<{
 export default function Footer() {
     return (
         <>
-            <div className="border-y h-[140px] bg-white text-white"></div>
-            <section className="bg-white">
-                <div className="container-custom border-gray-200 border-x border-solid">
+            <div className="border-y h-[140px] bg-background text-foreground"></div>
+            <section className="bg-background text-foreground">
+                <div className="container-custom border-border border-x border-solid">
                     <div className="py-16 lg:py-20 px-4 md:px-8 lg:px-16">
                         {/* Main Footer Content */}
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
@@ -91,7 +91,7 @@ export default function Footer() {
                                         className="h-9 max-h-9 md:h-auto w-auto"
                                     />
                                 </div>
-                                <p className="text-sm text-black/50 leading-relaxed max-w-xs">
+                                <p className="text-sm text-foreground/70 leading-relaxed max-w-xs">
                                     Monitor hallucinations, cost overruns, and
                                     performance drifts in real time — with a
                                     single, standardized dashboard.
@@ -100,7 +100,7 @@ export default function Footer() {
 
                             {/* Product Links */}
                             <div>
-                                <h3 className="text-sm font-medium mb-4 text-black">
+                                <h3 className="text-sm font-medium mb-4 text-foreground">
                                     Product
                                 </h3>
                                 <nav className="flex flex-col gap-3">
@@ -108,7 +108,7 @@ export default function Footer() {
                                         <a
                                             href={link.href}
                                             key={link.label}
-                                            className="text-sm text-black/50 hover:text-black/70 transition-colors"
+                                            className="text-sm text-foreground/70 hover:text-foreground transition-colors"
                                         >
                                             {link.label}
                                         </a>
@@ -118,7 +118,7 @@ export default function Footer() {
 
                             {/* Developer Links */}
                             <div>
-                                <h3 className="text-sm font-medium mb-4 text-black">
+                                <h3 className="text-sm font-medium mb-4 text-foreground">
                                     Developer
                                 </h3>
                                 <nav className="flex flex-col gap-3">
@@ -136,7 +136,7 @@ export default function Footer() {
                                                     ? "noopener noreferrer"
                                                     : undefined
                                             }
-                                            className="text-sm text-black/50 hover:text-black/70 transition-colors"
+                                            className="text-sm text-foreground/70 hover:text-foreground transition-colors"
                                         >
                                             {link.label}
                                             {link.external && (
@@ -149,7 +149,7 @@ export default function Footer() {
 
                             {/* Resources Links */}
                             <div>
-                                <h3 className="text-sm font-medium mb-4 text-black">
+                                <h3 className="text-sm font-medium mb-4 text-foreground">
                                     Resources
                                 </h3>
                                 <nav className="flex flex-col gap-3">
@@ -167,7 +167,7 @@ export default function Footer() {
                                                     ? "noopener noreferrer"
                                                     : undefined
                                             }
-                                            className="text-sm text-black/50 hover:text-black/70 transition-colors"
+                                            className="text-sm text-foreground/70 hover:text-foreground transition-colors"
                                         >
                                             {link.label}
                                             {link.external && (
@@ -180,18 +180,18 @@ export default function Footer() {
                         </div>
 
                         {/* Divider */}
-                        <div className="border-t border-gray-200 my-8 md:my-12"></div>
+                        <div className="border-t border-border my-8 md:my-12"></div>
 
                         {/* Bottom Section */}
                         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 md:gap-8">
                             {/* Copyright */}
-                            <p className="text-sm text-black/50">
+                            <p className="text-sm text-foreground/70">
                                 © {new Date().getFullYear()} Observa. All rights
                                 reserved.
                             </p>
 
                             {/* Legal Links */}
-                            <div className="flex flex-wrap gap-6 text-sm text-black/50">
+                            <div className="flex flex-wrap gap-6 text-sm text-foreground/70">
                                 {legalLinks.map((link) => (
                                     <a
                                         href={link.href}
@@ -204,7 +204,7 @@ export default function Footer() {
                                                 ? "noopener noreferrer"
                                                 : undefined
                                         }
-                                        className="hover:text-black/70 transition-colors"
+                                        className="hover:text-foreground transition-colors"
                                     >
                                         {link.label}
                                         {link.external && (

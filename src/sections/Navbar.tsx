@@ -3,6 +3,7 @@ import Image from "next/image";
 import logoImage from "@/assets/images/LogoB.png";
 import Button from "@/components/Button";
 import { useModal } from "@/components/ModalContext";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const navLinks = [
     { label: "Home", href: "#home" },
@@ -52,7 +53,7 @@ export default function Navbar() {
     };
 
     return (
-        <section className="py-4 lg:py-4 bg-white fixed top-0 w-full z-50  border-solid border-x border-y  border-spacing-x-3 border-gray-200">
+        <section className="py-4 lg:py-4 bg-background/90 backdrop-blur fixed top-0 w-full z-50 border border-x-0 border-border">
             <div className="lg:px-16">
                 <div className="flex items-center justify-between rounded-full p-2 px-4 md:pr-2 h-[56px]">
                     <div>
@@ -68,7 +69,7 @@ export default function Navbar() {
                         </a>
                     </div>
                     <div className="lg:flex flex-justify-center items-center hidden">
-                        <nav className="flex gap-8 font-regular text-base opacity-70">
+                        <nav className="flex gap-8 font-regular text-base opacity-70 text-foreground">
                             {navLinks.map((link) => (
                                 <a
                                     href={link.href}
@@ -83,7 +84,8 @@ export default function Navbar() {
                             ))}
                         </nav>
                     </div>
-                    <div className="flex justify-end gap-4">
+                    <div className="flex justify-end gap-3 items-center">
+                        <ThemeToggle className="hidden md:inline-flex" />
                         <Button
                             variant="primary"
                             className="md:hidden inline-flex rounded-none items-center"

@@ -27,7 +27,10 @@ export default function Hero() {
     };
 
     return (
-        <section id="home" className="relative md:pt-14 sm:pt-8 overflow-x-clip z-40">
+        <section
+            id="home"
+            className="relative md:pt-14 sm:pt-8 overflow-x-clip z-40 bg-background text-foreground"
+        >
             {/* ✅ Background Layer */}
 
             {/* <div
@@ -56,7 +59,7 @@ export default function Hero() {
                 />
             </div> */}
 
-            <div className="container-custom border-x border-y  border-solid b">
+            <div className="container-custom border-x border-y  border-solid b border-border">
                 {/*  Content Layer */}
                 <div className=" relative z-10">
                     {/* <div className="flex justify-center">
@@ -78,7 +81,7 @@ export default function Hero() {
                             <span>Catch them first.</span>
                             {/* </PointerHighlight> */}
                         </h1>
-                        <p className="text-left text-xl text-black/50 mt-8 mx-auto">
+                        <p className="text-left text-xl text-foreground/70 mt-8 mx-auto">
                             Monitor hallucinations, cost overruns, and
                             performance drifts <br></br>in real time — with a
                             single, standardized dashboard.
@@ -119,7 +122,7 @@ export default function Hero() {
                             </Button>
                             <Button
                                 variant="ghost"
-                                className="text-md rounded-none  text-black outline-dashed -outline-offset-1 outline-gray-300 px-4 py-6"
+                                className="text-md rounded-none  text-foreground outline-dashed -outline-offset-1 outline-border px-4 py-6"
                                 onClick={handleRequestDemoClick}
                             >
                                 Request a Demo
@@ -127,7 +130,7 @@ export default function Hero() {
                             </Button>
                         </div>
 
-                        <div className="mt-12 bg-slate-200 border-solid border-2">
+                        <div className="mt-12 bg-muted border-solid border-2 border-border">
                             <img
                                 src={heroImage.src}
                                 alt="Functional Image"

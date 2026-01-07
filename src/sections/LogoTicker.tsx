@@ -36,7 +36,7 @@ function LogoCard({ logo, className, children }: LogoCardProps) {
     return (
         <div
             className={cn(
-                "flex items-center justify-center bg-white px-4 py-8 md:p-8 border-gray-200",
+                "flex items-center justify-center bg-background px-4 py-8 md:p-8 border-border",
                 className
             )}
         >
@@ -52,18 +52,18 @@ function LogoCard({ logo, className, children }: LogoCardProps) {
 
 export default function LogoTicker() {
     return (
-        <section className="py-0 bg-white">
+        <section className="py-0 bg-background text-foreground">
             <div className="container-custom-spatial">
                 {/* <h3 className="text-center text-black/50 text-xl mb-6 md:text-2xl font-medium tracking-tight">
                     Works with your favorite{" "}
                     <span className="font-semibold text-black">platforms</span>
                 </h3> */}
 
-                <div className="relative grid grid-cols-2 border-x border-gray-200 md:grid-cols-4  mx-auto">
-                    <div className="-translate-x-1/2 -top-px pointer-events-none absolute left-1/2 w-screen border-t border-gray-200" />
+                <div className="relative grid grid-cols-2 border-x border-border md:grid-cols-4  mx-auto">
+                    <div className="-translate-x-1/2 -top-px pointer-events-none absolute left-1/2 w-screen border-t border-border" />
 
                     <LogoCard
-                        className="relative border-r border-b bg-slate-50"
+                        className="relative border-r border-b bg-muted"
                         logo={platforms[0]}
                     >
                         <Plus
@@ -78,7 +78,7 @@ export default function LogoTicker() {
                     />
 
                     <LogoCard
-                        className="relative border-r border-b md:bg-slate-50"
+                        className="relative border-r border-b md:bg-muted"
                         logo={platforms[2]}
                     >
                         <Plus
@@ -92,12 +92,12 @@ export default function LogoTicker() {
                     </LogoCard>
 
                     <LogoCard
-                        className="relative border-b bg-slate-50 md:bg-white"
+                        className="relative border-b bg-muted md:bg-background"
                         logo={platforms[3]}
                     />
 
                     <LogoCard
-                        className="relative border-r border-b bg-slate-50 md:border-b-0 md:bg-white"
+                        className="relative border-r border-b bg-muted md:border-b-0 md:bg-background"
                         logo={platforms[4]}
                     >
                         <Plus
@@ -107,15 +107,15 @@ export default function LogoTicker() {
                     </LogoCard>
 
                     <LogoCard
-                        className="border-b bg-white md:border-r md:border-b-0 md:bg-slate-50"
+                        className="border-b bg-background md:border-r md:border-b-0 md:bg-muted"
                         logo={platforms[5]}
                     />
 
                     <LogoCard className="border-r" logo={platforms[6]} />
 
-                    <LogoCard className="bg-slate-50" logo={platforms[7]} />
+                    <LogoCard className="bg-muted" logo={platforms[7]} />
 
-                    <div className="-translate-x-1/2 -bottom-px pointer-events-none absolute left-1/2 w-screen border-b border-gray-200" />
+                    <div className="-translate-x-1/2 -bottom-px pointer-events-none absolute left-1/2 w-screen border-b border-border" />
                 </div>
             </div>
         </section>

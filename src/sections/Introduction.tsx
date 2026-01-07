@@ -132,18 +132,18 @@ export default function Introduction() {
     });
 
     return (
-        <section className="py-28 lg:py-52">
+        <section className="py-28 lg:py-52 bg-background text-foreground">
             <div className="container">
                 <div className="sticky sm:top-32 lg:top-56">
                     <div className="flex justify-center">
                         <Tag>Causal Reasoning</Tag>
                     </div>
-                    <p className="text-sm text-center text-black/50 mt-4 font-light">
+                    <p className="text-sm text-center text-foreground/70 mt-4 font-light">
                         Scroll to read ↓
                     </p>
                     <motion.div
                         style={{ scaleX: scrollYProgress }}
-                        className="mx-auto flex justify-center mt-6 h-1 w-64 bg-gray-300 origin-left rounded-full"
+                        className="mx-auto flex justify-center mt-6 h-1 w-64 bg-muted origin-left rounded-full"
                     />
 
                     {/* Paragraph 1 */}
@@ -158,7 +158,7 @@ export default function Introduction() {
                         content={paragraph2}
                         scrollYProgress={scrollYProgress}
                         offsetStart={paragraph1.length}
-                        className="text-2xl text-center font-roman font-light mt-24 text-black/40 gap-x-2"
+                        className="text-2xl text-center font-roman font-light mt-24 text-foreground/60 gap-x-2"
                     />
                 </div>
 

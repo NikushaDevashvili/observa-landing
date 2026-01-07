@@ -3,11 +3,11 @@ import slackalertimg from "@/assets/images/Slackalerts.png";
 
 export default function TrackersSection() {
     return (
-        <section className="bg-white">
-            <div className="border-y h-[140px] bg-white text-white"></div>
-            <div className="container-custom-spatial border border-0 bg-white">
+        <section className="bg-background text-foreground">
+            <div className="border-y h-[140px] bg-background text-foreground"></div>
+            <div className="container-custom-spatial bg-background">
                 <div className="grid grid-grid-cols-1 lg:grid-cols-2 gap-16 ">
-                    <div className="border border-t-0 items-center">
+                    <div className="border border-t-0 items-center border-border">
                         <div className="min-h-[40rem] sm:min-h-[20rem]">
                             <img
                                 src={monitorimg.src}
@@ -15,11 +15,11 @@ export default function TrackersSection() {
                                 className="w-full h-96 md:h-96 object-cover"
                             />
                         </div>
-                        <div className="border border-gray-200 border-x"></div>
+                        <div className="border border-border border-x"></div>
                         <div className="py-8">
                             <h1 className="text-2xl px-8">Set Trackers</h1>
                         </div>
-                        <div className="border border-gray-200 border-t-0"></div>
+                        <div className="border border-border border-t-0"></div>
                         <div className="py-6 ">
                             <h1 className="text-md py-6 px-8">
                                 Turn raw logs into clear insights that help you
@@ -28,7 +28,7 @@ export default function TrackersSection() {
                             </h1>
                         </div>
                     </div>
-                    <div className="border border-t-0 border items-center">
+                    <div className="border border-t-0 items-center border-border">
                         <div className="">
                             <img
                                 src={slackalertimg.src}
@@ -36,13 +36,13 @@ export default function TrackersSection() {
                                 className="w-full h-72 md:h-96 object-cover"
                             />
                         </div>
-                        <div className="border border-gray-200 border-t-0"></div>
+                        <div className="border border-border border-t-0"></div>
                         <div className="py-8">
                             <h1 className="text-2xl px-8">
                                 Catch Silent Failures
                             </h1>
                         </div>
-                        <div className="border border-gray-200 border-t-0"></div>
+                        <div className="border border-border border-t-0"></div>
                         <div className="py-6 ">
                             <h1 className="text-md py-6 px-8">
                                 Don&apos;t wait for user complaints.
@@ -55,7 +55,7 @@ export default function TrackersSection() {
                     </div>
                 </div>
             </div>
-            <div className="border-y h-[140px] bg-white text-white"></div>
+            <div className="border-y h-[140px] bg-background text-foreground"></div>
         </section>
     );
 }
