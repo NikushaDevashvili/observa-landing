@@ -28,6 +28,13 @@ export default function Navbar() {
             const offset = 80; // Account for fixed navbar height
             const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
             window.scrollTo({ top: targetPosition, behavior: "smooth" });
+        } else if (targetId === "faqs") {
+            // If FAQs section doesn't exist, scroll to footer
+            const footer = document.querySelector("footer, section:last-of-type");
+            if (footer) {
+                const footerPosition = (footer as HTMLElement).getBoundingClientRect().top + window.pageYOffset - offset;
+                window.scrollTo({ top: footerPosition, behavior: "smooth" });
+            }
         } else {
             window.location.hash = href;
         }
