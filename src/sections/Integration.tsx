@@ -12,7 +12,8 @@ import {
     Plug,
     ShieldCheck,
 } from "lucide-react";
-
+import Image from "next/image";
+import traceview from "@/assets/images/trace-view.png";
 export default function Integration() {
     return (
         <>
@@ -60,7 +61,6 @@ export default function Integration() {
                                                                     {
                                                                         description
                                                                     }
-                                                                    <div className="mt-6 mb-2 md:hidden aspect-video w-full bg-muted rounded-xl" />
                                                                 </AccordionContent>
                                                             </AccordionItem>
                                                         )
@@ -68,7 +68,15 @@ export default function Integration() {
                                                 </Accordion>
                                             </div>
                                             {/* Media */}
-                                            <div className="hidden md:block w-full h-full bg-muted rounded-xl" />
+                                            <div className="hidden md:flex w-full h-full rounded-xl overflow-hidden items-center justify-center">
+                                                <Image
+                                                    src={traceview.src}
+                                                    alt="Observa trace interface showing error monitoring, spans, tool calls, and LLM interactions"
+                                                    width={800}
+                                                    height={600}
+                                                    className="w-full h-full object-contain rounded-xl"
+                                                />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

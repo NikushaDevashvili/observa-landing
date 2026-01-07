@@ -16,12 +16,12 @@ export default function Home() {
         <>
             <Navbar />
             <Hero />
+            <LogoTicker />
             <Functional />
             <Summaries />
             <TrackersSection />
             <Integration />
             <Booking />
-            {/* <LogoTicker /> */}
             <Footer />
         </>
     );

@@ -1,41 +1,121 @@
-import quantumLogo from "@/assets/images/quantum.svg";
-import acmeLogo from "@/assets/images/acme-corp.svg";
-import echoValleyLogo from "@/assets/images/echo-valley.svg";
-import pulseLogo from "@/assets/images/pulse.svg";
-import outsideLogo from "@/assets/images/outside.svg";
-import apexLogo from "@/assets/images/apex.svg";
-import celestialLogo from "@/assets/images/celestial.svg";
-import twiceLogo from "@/assets/images/twice.svg";
-import Image from "next/image";
+import openaiLogo from "@/assets/images/openai-logo.svg";
+import anthropicLogo from "@/assets/images/anthropic-logo.svg";
+import googleLogo from "@/assets/images/google-logo.svg";
+import langchainLogo from "@/assets/images/langchain-logo.svg";
+import nodejsLogo from "@/assets/images/nodejs-logo.png";
+import pythonLogo from "@/assets/images/python-logo.png";
+import typescriptLogo from "@/assets/images/typescript-logo.svg";
+import slackLogo from "@/assets/images/slacklogo.png";
+import { Plus } from "lucide-react";
+import { cn } from "@/lib/utils";
 
-const logos = [
-    { name: "Quantum", image: quantumLogo },
-    { name: "Acme Corp", image: acmeLogo },
-    { name: "Echo Valley", image: echoValleyLogo },
-    { name: "Pulse", image: pulseLogo },
-    { name: "Outside", image: outsideLogo },
-    { name: "Apex", image: apexLogo },
-    { name: "Celestial", image: celestialLogo },
-    { name: "Twice", image: twiceLogo },
+const platforms = [
+    { name: "OpenAI", image: openaiLogo },
+    { name: "Anthropic", image: anthropicLogo },
+    { name: "Google", image: googleLogo },
+    { name: "LangChain", image: langchainLogo },
+    { name: "Node.js", image: nodejsLogo },
+    { name: "Python", image: pythonLogo },
+    { name: "TypeScript", image: typescriptLogo },
+    { name: "Slack", image: slackLogo },
 ];
+
+type LogoCardProps = {
+    logo: { name: string; image: any };
+    className?: string;
+    children?: React.ReactNode;
+};
+
+function LogoCard({ logo, className, children }: LogoCardProps) {
+    // PNG files in Next.js import as string paths
+    const imageSrc =
+        typeof logo.image === "string"
+            ? logo.image
+            : logo.image?.src || logo.image?.default || logo.image;
+
+    return (
+        <div
+            className={cn(
+                "flex items-center justify-center bg-white px-4 py-8 md:p-8 border-gray-200",
+                className
+            )}
+        >
+            <img
+                src={imageSrc}
+                alt={logo.name}
+                className="h-8 md:h-10 w-auto object-contain max-w-[140px]"
+            />
+            {children}
+        </div>
+    );
+}
 
 export default function LogoTicker() {
     return (
-        <section className="py-24 overflow-x-clip">
-            <div className="container">
-                <h3 className="text-center text-white/50 text-xl">
-                    Already chosen by these market leaders
-                </h3>
-                <div className="overflow-hidden mt-12 [mask-image:linear-gradient(to_right, transparent, black_10%, black_90%, transparent)]">
-                    <div className="flex gap-24 pr-24">
-                        {logos.map((logo) => (
-                            <Image
-                                src={logo.image}
-                                key={logo.name}
-                                alt={logo.name}
-                            />
-                        ))}
-                    </div>
+        <section className="py-0 bg-white">
+            <div className="container-custom-spatial">
+                {/* <h3 className="text-center text-black/50 text-xl mb-6 md:text-2xl font-medium tracking-tight">
+                    Works with your favorite{" "}
+                    <span className="font-semibold text-black">platforms</span>
+                </h3> */}
+
+                <div className="relative grid grid-cols-2 border-x border-gray-200 md:grid-cols-4  mx-auto">
+                    <div className="-translate-x-1/2 -top-px pointer-events-none absolute left-1/2 w-screen border-t border-gray-200" />
+
+                    <LogoCard
+                        className="relative border-r border-b bg-slate-50"
+                        logo={platforms[0]}
+                    >
+                        <Plus
+                            className="-right-[12.5px] -bottom-[12.5px] absolute z-10 size-6 text-gray-300"
+                            strokeWidth={1}
+                        />
+                    </LogoCard>
+
+                    <LogoCard
+                        className="border-b md:border-r"
+                        logo={platforms[1]}
+                    />
+
+                    <LogoCard
+                        className="relative border-r border-b md:bg-slate-50"
+                        logo={platforms[2]}
+                    >
+                        <Plus
+                            className="-right-[12.5px] -bottom-[12.5px] absolute z-10 size-6 text-gray-300"
+                            strokeWidth={1}
+                        />
+                        <Plus
+                            className="-bottom-[12.5px] -left-[12.5px] absolute z-10 hidden size-6 text-gray-300 md:block"
+                            strokeWidth={1}
+                        />
+                    </LogoCard>
+
+                    <LogoCard
+                        className="relative border-b bg-slate-50 md:bg-white"
+                        logo={platforms[3]}
+                    />
+
+                    <LogoCard
+                        className="relative border-r border-b bg-slate-50 md:border-b-0 md:bg-white"
+                        logo={platforms[4]}
+                    >
+                        <Plus
+                            className="-right-[12.5px] -bottom-[12.5px] md:-left-[12.5px] absolute z-10 size-6 text-gray-300 md:hidden"
+                            strokeWidth={1}
+                        />
+                    </LogoCard>
+
+                    <LogoCard
+                        className="border-b bg-white md:border-r md:border-b-0 md:bg-slate-50"
+                        logo={platforms[5]}
+                    />
+
+                    <LogoCard className="border-r" logo={platforms[6]} />
+
+                    <LogoCard className="bg-slate-50" logo={platforms[7]} />
+
+                    <div className="-translate-x-1/2 -bottom-px pointer-events-none absolute left-1/2 w-screen border-b border-gray-200" />
                 </div>
             </div>
         </section>

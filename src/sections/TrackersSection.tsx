@@ -28,12 +28,12 @@ export default function TrackersSection() {
                             </h1>
                         </div>
                     </div>
-                    <div className="border border-t-0 borde items-center">
+                    <div className="border border-t-0 border items-center">
                         <div className="">
                             <img
                                 src={slackalertimg.src}
                                 alt="Functional Image"
-                                className="w-full h-72 md:h-69 object-cover"
+                                className="w-full h-72 md:h-96 object-cover"
                             />
                         </div>
                         <div className="border border-gray-200 border-t-0"></div>

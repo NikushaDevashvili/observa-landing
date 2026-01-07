@@ -6,33 +6,44 @@ import { useModal } from "@/components/ModalContext";
 
 const navLinks = [
     { label: "Home", href: "#home" },
-    { label: "Feature", href: "#features" },
+    { label: "Features", href: "#features" },
     { label: "Integrations", href: "#integrations" },
-    { label: "FAQs", href: "#faqs" },
+    { label: "Book a demo", href: "#booking" },
 ];
 
 export default function Navbar() {
     const { open } = useModal();
 
-    const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    const handleNavClick = (
+        e: React.MouseEvent<HTMLAnchorElement>,
+        href: string
+    ) => {
         e.preventDefault();
         const targetId = href.replace("#", "");
         const offset = 80; // Account for fixed navbar height
-        
+
         if (targetId === "home") {
             window.scrollTo({ top: 0, behavior: "smooth" });
             return;
         }
-        
+
         const target = document.getElementById(targetId);
         if (target) {
-            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+            const targetPosition =
+                target.getBoundingClientRect().top +
+                window.pageYOffset -
+                offset;
             window.scrollTo({ top: targetPosition, behavior: "smooth" });
         } else if (targetId === "faqs") {
             // If FAQs section doesn't exist, scroll to footer
-            const footer = document.querySelector("footer, section:last-of-type");
+            const footer = document.querySelector(
+                "footer, section:last-of-type"
+            );
             if (footer) {
-                const footerPosition = (footer as HTMLElement).getBoundingClientRect().top + window.pageYOffset - offset;
+                const footerPosition =
+                    (footer as HTMLElement).getBoundingClientRect().top +
+                    window.pageYOffset -
+                    offset;
                 window.scrollTo({ top: footerPosition, behavior: "smooth" });
             }
         } else {
@@ -45,7 +56,10 @@ export default function Navbar() {
             <div className="lg:px-16">
                 <div className="flex items-center justify-between rounded-full p-2 px-4 md:pr-2 h-[56px]">
                     <div>
-                        <a href="#home" onClick={(e) => handleNavClick(e, "#home")}>
+                        <a
+                            href="#home"
+                            onClick={(e) => handleNavClick(e, "#home")}
+                        >
                             <Image
                                 src={logoImage}
                                 alt="Layers logo"
@@ -59,7 +73,9 @@ export default function Navbar() {
                                 <a
                                     href={link.href}
                                     key={link.label}
-                                    onClick={(e) => handleNavClick(e, link.href)}
+                                    onClick={(e) =>
+                                        handleNavClick(e, link.href)
+                                    }
                                     className="hover:opacity-100 transition-opacity cursor-pointer"
                                 >
                                     {link.label}

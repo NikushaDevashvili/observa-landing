@@ -32,7 +32,7 @@ const faqs = [
 export default function Faqs() {
     const [selectedIndex, setSelectedIndex] = useState<number | undefined>();
     return (
-        <section id="faqs" className="py-24">
+        <section className="py-24">
             <div className="container">
                 <div className="flex justify-center">
                     <Tag>FAQs</Tag>

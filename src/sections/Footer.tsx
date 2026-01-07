@@ -12,25 +12,65 @@ const developerLinks: Array<{
     href: string;
     external?: boolean;
 }> = [
-    { label: "SDK Installation Manual", href: "#sdk-installation" },
+    {
+        label: "SDK Installation Manual",
+        href: "https://observa-app.vercel.app/docs",
+        external: true,
+    },
     {
         label: "SDK on npm",
         href: "https://www.npmjs.com/package/observa",
         external: true,
     },
-    { label: "API Reference", href: "#api-reference" },
-    { label: "Documentation", href: "#documentation" },
+    {
+        label: "API Reference",
+        href: "https://observa-app.vercel.app/docs",
+        external: true,
+    },
+    {
+        label: "Documentation",
+        href: "https://observa-app.vercel.app/docs",
+        external: true,
+    },
 ];
 
-const resourcesLinks = [
-    { label: "Support", href: "#support" },
-    { label: "Blog", href: "#blog" },
-    { label: "Changelog", href: "#changelog" },
+const resourcesLinks: Array<{
+    label: string;
+    href: string;
+    external?: boolean;
+}> = [
+    {
+        label: "Support",
+        href: "https://observa-app.vercel.app/docs",
+        external: true,
+    },
+    {
+        label: "Blog",
+        href: "https://observa-app.vercel.app/docs",
+        external: true,
+    },
+    {
+        label: "Changelog",
+        href: "https://observa-app.vercel.app/docs",
+        external: true,
+    },
 ];
 
-const legalLinks = [
-    { label: "Privacy Policy", href: "#privacy" },
-    { label: "Terms of Service", href: "#terms" },
+const legalLinks: Array<{
+    label: string;
+    href: string;
+    external?: boolean;
+}> = [
+    {
+        label: "Privacy Policy",
+        href: "https://observa-app.vercel.app/docs",
+        external: true,
+    },
+    {
+        label: "Terms of Service",
+        href: "https://observa-app.vercel.app/docs",
+        external: true,
+    },
 ];
 
 export default function Footer() {
@@ -117,9 +157,22 @@ export default function Footer() {
                                         <a
                                             href={link.href}
                                             key={link.label}
+                                            target={
+                                                link.external
+                                                    ? "_blank"
+                                                    : undefined
+                                            }
+                                            rel={
+                                                link.external
+                                                    ? "noopener noreferrer"
+                                                    : undefined
+                                            }
                                             className="text-sm text-black/50 hover:text-black/70 transition-colors"
                                         >
                                             {link.label}
+                                            {link.external && (
+                                                <span className="ml-1">↗</span>
+                                            )}
                                         </a>
                                     ))}
                                 </nav>
@@ -143,9 +196,20 @@ export default function Footer() {
                                     <a
                                         href={link.href}
                                         key={link.label}
+                                        target={
+                                            link.external ? "_blank" : undefined
+                                        }
+                                        rel={
+                                            link.external
+                                                ? "noopener noreferrer"
+                                                : undefined
+                                        }
                                         className="hover:text-black/70 transition-colors"
                                     >
                                         {link.label}
+                                        {link.external && (
+                                            <span className="ml-1">↗</span>
+                                        )}
                                     </a>
                                 ))}
                             </div>
