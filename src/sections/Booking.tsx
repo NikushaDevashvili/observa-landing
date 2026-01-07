@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
+import Cal, { getCalApi } from "@calcom/embed-react";
 
 interface BookingProps {
-    calLink?: string; // e.g., "your-username/30min" or just "your-username"
+    calLink?: string; // e.g., "your-username/30min" or "your-username/event"
     embedType?: "inline" | "popup" | "popupButton";
 }
 
@@ -12,7 +13,19 @@ export default function Booking({
         "nika-devashvili-38o3wu/quick-demo-walkthrough",
     embedType = "inline",
 }: BookingProps) {
-    // Load Cal.com embed script only for popup modes (not needed for iframe)
+    const namespace = useMemo(() => "booking-widget", []);
+
+    // Initialize Cal UI for inline embeds
+    useEffect(() => {
+        if (embedType === "inline") {
+            (async () => {
+                const cal = await getCalApi({ namespace });
+                cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
+            })();
+        }
+    }, [embedType, namespace]);
+
+    // Load Cal.com embed script for popup modes
     useEffect(() => {
         if (embedType === "popup" || embedType === "popupButton") {
             const script = document.createElement("script");
@@ -21,7 +34,6 @@ export default function Booking({
             document.body.appendChild(script);
 
             return () => {
-                // Cleanup: remove script on unmount
                 const existingScript = document.querySelector(
                     'script[src="https://app.cal.com/embed/embed.js"]'
                 );
@@ -32,11 +44,6 @@ export default function Booking({
         }
     }, [embedType]);
 
-    // Construct the Cal.com embed URL for iframe
-    // Use the /embed/ prefix to avoid occasional 404s on some Cal setups
-    const calUrl = `https://cal.com/embed/${calLink}`;
-
-    // For inline embed, use iframe with proper attributes
     if (embedType === "inline") {
         return (
             <section className="py-24">
@@ -51,22 +58,15 @@ export default function Booking({
                             className="w-full max-w-4xl bg-white rounded-xl shadow-lg overflow-hidden"
                             style={{ minHeight: "700px" }}
                         >
-                            <iframe
-                                src={calUrl}
+                            <Cal
+                                namespace={namespace}
+                                calLink={calLink}
                                 style={{
                                     width: "100%",
                                     height: "700px",
-                                    border: "none",
-                                    display: "block",
-                                    minHeight: "700px",
-                                    backgroundColor: "transparent",
+                                    overflow: "scroll",
                                 }}
-                                title="Cal.com Booking"
-                                className="w-full"
-                                allow="camera; microphone; geolocation; encrypted-media"
-                                loading="eager"
-                                referrerPolicy="no-referrer-when-downgrade"
-                                scrolling="no"
+                                config={{ layout: "month_view" }}
                             />
                         </div>
                     </div>
@@ -75,7 +75,7 @@ export default function Booking({
         );
     }
 
-    // For popup button, use Cal.com's embed script
+    // Popup button fallback
     return (
         <section className="py-24">
             <div className="container">
