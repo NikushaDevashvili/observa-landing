@@ -33,7 +33,10 @@ export default function Booking({
     }, [embedType]);
 
     // Construct the Cal.com embed URL
-    const calUrl = `https://cal.com/${calLink}`;
+    // Try both embed formats - some Cal.com setups use different paths
+    // Format 1: https://cal.com/username/event-slug/embed
+    // Format 2: https://cal.com/embed/username/event-slug
+    const calUrl = `https://cal.com/${calLink}/embed`;
 
     // For inline embed, use iframe
     if (embedType === "inline") {
