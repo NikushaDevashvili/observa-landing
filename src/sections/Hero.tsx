@@ -8,8 +8,11 @@ import { ArrowRight } from "lucide-react";
 
 import heroImage from "@/assets/images/HeroDashboardLight.png";
 import PixelBlast from "@/components/PixelBlast";
+import { useModal } from "@/components/ModalContext";
 
 export default function Hero() {
+    const { open } = useModal();
+
     const handleRequestDemoClick = () => {
         const target = document.getElementById("booking");
         if (target) {
@@ -17,6 +20,10 @@ export default function Hero() {
         } else {
             window.location.hash = "#booking";
         }
+    };
+
+    const handleJoinWaitlistClick = () => {
+        open();
     };
 
     return (
@@ -106,6 +113,7 @@ export default function Hero() {
                             <Button
                                 variant="default"
                                 className="text-md rounded-none px-4 py-6"
+                                onClick={handleJoinWaitlistClick}
                             >
                                 Join Waitlist
                             </Button>
