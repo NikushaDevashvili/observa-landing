@@ -17,18 +17,18 @@ export default function Integration() {
     return (
         <>
             <section>
-                <div className="container-custom border-x">
+                <div className="container-custom-spatial border-x">
                     <div className=" border-gray-200 bg-white border-x border-l-0 border-r-0  border-solid p-0">
                         <div className="min-h-[24rem]">
                             <div className="flex flex-col items-center gap-4 mt-24 mx-1 md:mx-20">
-                                <h1 className="text-4xl md:text-6xl lg:text-5xl text-center mt-8 font-medium break-normal mx-auto tracking-custom">
+                                <h1 className="text-4xl md:text-6xl lg:text-5xl text-center mt-24 font-medium break-normal mx-auto tracking-custom">
                                     Best practice monitoring <br />{" "}
                                     <span className="text-slate-600">
                                         with easy SDK installation{" "}
                                     </span>
                                 </h1>
                                 <div className="flex items-center justify-center ">
-                                    <div className="max-w-(--breakpoint-lg) w-full py-24 px-6">
+                                    <div className="max-w-(--breakpoint-lg) w-full pt-24 pb-36 px-6">
                                         <div className="mt-6 md:mt-10 w-full mx-auto grid md:grid-cols-2 gap-12">
                                             <div className="">
                                                 <Accordion
@@ -76,6 +76,7 @@ export default function Integration() {
                         </div>
                     </div>
                 </div>
+                <div className="border-y h-[140px] bg-white text-white"></div>
             </section>
         </>
     );

@@ -18,14 +18,14 @@ export default function MyApp() {
 
     return (
         <section className="py-32">
-            <div className="container">
+            <div className="container-custom-spatial">
                 <div className="flex justify-center mb-8">
                     <h2 className="text-4xl md:text-5xl font-medium text-center">
                         Book a <span className="text-slate-600">Demo</span>
                     </h2>
                 </div>
                 <div className="flex justify-center">
-                    <div className="w-full max-w-4xl bg-white border border-gray-200 overflow-hidden p-6">
+                    <div className="w-full bg-white border border-gray-200 overflow-hidden p-6">
                         <Cal
                             namespace="quick-demo-walkthrough"
                             calLink="nika-devashvili-38o3wu/quick-demo-walkthrough"
@@ -39,6 +39,7 @@ export default function MyApp() {
                     </div>
                 </div>
             </div>
+            <div className="border-y h-[140px] bg-white text-white"></div>
         </section>
     );
 }
