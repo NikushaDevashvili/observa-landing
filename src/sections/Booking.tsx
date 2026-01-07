@@ -12,25 +12,9 @@ export default function Booking({
         "nika-devashvili-38o3wu/quick-demo-walkthrough",
     embedType = "inline",
 }: BookingProps) {
-    // Load Cal.com embed script
+    // Load Cal.com embed script only for popup modes (not needed for iframe)
     useEffect(() => {
-        // Always load the embed script for inline embeds
-        if (embedType === "inline") {
-            const script = document.createElement("script");
-            script.src = "https://app.cal.com/embed/embed.js";
-            script.async = true;
-            document.body.appendChild(script);
-
-            return () => {
-                // Cleanup: remove script on unmount
-                const existingScript = document.querySelector(
-                    'script[src="https://app.cal.com/embed/embed.js"]'
-                );
-                if (existingScript) {
-                    document.body.removeChild(existingScript);
-                }
-            };
-        } else if (embedType === "popup" || embedType === "popupButton") {
+        if (embedType === "popup" || embedType === "popupButton") {
             const script = document.createElement("script");
             script.src = "https://app.cal.com/embed/embed.js";
             script.async = true;
@@ -71,12 +55,14 @@ export default function Booking({
                                     border: "none",
                                     display: "block",
                                     minHeight: "700px",
+                                    backgroundColor: "transparent",
                                 }}
                                 title="Cal.com Booking"
                                 className="w-full"
                                 allow="camera; microphone; geolocation; encrypted-media"
-                                loading="lazy"
+                                loading="eager"
                                 referrerPolicy="no-referrer-when-downgrade"
+                                scrolling="no"
                             />
                         </div>
                     </div>
