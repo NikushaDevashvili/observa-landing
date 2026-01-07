@@ -1,3 +1,5 @@
+"use client";
+
 import bgImage from "@/assets/images/bgIm.png";
 import { PointerHighlight } from "@/components/ui/pointer-highlight";
 
@@ -8,6 +10,15 @@ import heroImage from "@/assets/images/HeroDashboardLight.png";
 import PixelBlast from "@/components/PixelBlast";
 
 export default function Hero() {
+    const handleRequestDemoClick = () => {
+        const target = document.getElementById("booking");
+        if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+        } else {
+            window.location.hash = "#booking";
+        }
+    };
+
     return (
         <section className="relative md:pt-14 sm:pt-8 overflow-x-clip z-40">
             {/* ✅ Background Layer */}
@@ -101,6 +112,7 @@ export default function Hero() {
                             <Button
                                 variant="ghost"
                                 className="text-md rounded-none  text-black outline-dashed -outline-offset-1 outline-gray-300 px-4 py-6"
+                                onClick={handleRequestDemoClick}
                             >
                                 Request a Demo
                                 <ArrowRight />
