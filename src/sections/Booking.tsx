@@ -8,7 +8,7 @@ interface BookingProps {
 }
 
 export default function Booking({ 
-    calLink = process.env.NEXT_PUBLIC_CAL_LINK || "your-username",
+    calLink = process.env.NEXT_PUBLIC_CAL_LINK || "nika-devashvili-38o3wu",
     embedType = "inline"
 }: BookingProps) {
     // Load Cal.com embed script for popup modes
@@ -32,7 +32,7 @@ export default function Booking({
     }, [embedType]);
 
     // Construct the Cal.com embed URL
-    const calUrl = `https://cal.com/${calLink}`;
+    const calUrl = `https://cal.com/${nika-devashvili-38o3wu/quick-demo-walkthrough}`;
     
     // For inline embed, use iframe
     if (embedType === "inline") {
