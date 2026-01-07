@@ -17,6 +17,7 @@ export default function Navbar() {
     const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
         e.preventDefault();
         const targetId = href.replace("#", "");
+        const offset = 80; // Account for fixed navbar height
         
         if (targetId === "home") {
             window.scrollTo({ top: 0, behavior: "smooth" });
@@ -25,7 +26,6 @@ export default function Navbar() {
         
         const target = document.getElementById(targetId);
         if (target) {
-            const offset = 80; // Account for fixed navbar height
             const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
             window.scrollTo({ top: targetPosition, behavior: "smooth" });
         } else if (targetId === "faqs") {
