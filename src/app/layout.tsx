@@ -11,6 +11,8 @@ const jetbrainsMono = JetBrains_Mono({
     display: "swap",
 });
 
+const isDev = process.env.NODE_ENV === "development";
+
 export default function RootLayout({
     children,
 }: Readonly<{
@@ -19,11 +21,13 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
             <head>
-                <script
-                    defer
-                    src="http://localhost:3000/script.js"
-                    data-website-id="64ddb8d9-881b-43f5-b4d1-6410e96bfb84"
-                ></script>
+                {isDev && (
+                    <script
+                        defer
+                        src="http://localhost:3000/script.js"
+                        data-website-id="64ddb8d9-881b-43f5-b4d1-6410e96bfb84"
+                    ></script>
+                )}
             </head>
             <body
                 className={`${jetbrainsMono.variable} font-sans antialiased bg-white  text-black`}
