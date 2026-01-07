@@ -12,9 +12,25 @@ export default function Booking({
         "nika-devashvili-38o3wu/quick-demo-walkthrough",
     embedType = "inline",
 }: BookingProps) {
-    // Load Cal.com embed script for popup modes
+    // Load Cal.com embed script
     useEffect(() => {
-        if (embedType === "popup" || embedType === "popupButton") {
+        // Always load the embed script for inline embeds
+        if (embedType === "inline") {
+            const script = document.createElement("script");
+            script.src = "https://app.cal.com/embed/embed.js";
+            script.async = true;
+            document.body.appendChild(script);
+
+            return () => {
+                // Cleanup: remove script on unmount
+                const existingScript = document.querySelector(
+                    'script[src="https://app.cal.com/embed/embed.js"]'
+                );
+                if (existingScript) {
+                    document.body.removeChild(existingScript);
+                }
+            };
+        } else if (embedType === "popup" || embedType === "popupButton") {
             const script = document.createElement("script");
             script.src = "https://app.cal.com/embed/embed.js";
             script.async = true;
@@ -32,13 +48,10 @@ export default function Booking({
         }
     }, [embedType]);
 
-    // Construct the Cal.com embed URL
-    // Try both embed formats - some Cal.com setups use different paths
-    // Format 1: https://cal.com/username/event-slug/embed
-    // Format 2: https://cal.com/embed/username/event-slug
+    // Construct the Cal.com embed URL for iframe
     const calUrl = `https://cal.com/${calLink}/embed`;
 
-    // For inline embed, use iframe
+    // For inline embed, use iframe with proper attributes
     if (embedType === "inline") {
         return (
             <section className="py-24">
@@ -49,7 +62,7 @@ export default function Booking({
                         </h2>
                     </div>
                     <div className="flex justify-center">
-                        <div className="w-full max-w-4xl bg-white rounded-xl shadow-lg overflow-hidden">
+                        <div className="w-full max-w-4xl bg-white rounded-xl shadow-lg overflow-hidden" style={{ minHeight: "700px" }}>
                             <iframe
                                 src={calUrl}
                                 style={{
@@ -57,10 +70,13 @@ export default function Booking({
                                     height: "700px",
                                     border: "none",
                                     display: "block",
+                                    minHeight: "700px",
                                 }}
                                 title="Cal.com Booking"
                                 className="w-full"
-                                allow="camera; microphone; geolocation"
+                                allow="camera; microphone; geolocation; encrypted-media"
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
                             />
                         </div>
                     </div>
