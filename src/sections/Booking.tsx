@@ -49,17 +49,18 @@ export default function Booking({
                         </h2>
                     </div>
                     <div className="flex justify-center">
-                        <div className="w-full max-w-4xl">
+                        <div className="w-full max-w-4xl bg-white rounded-xl shadow-lg overflow-hidden">
                             <iframe
                                 src={calUrl}
                                 style={{
                                     width: "100%",
-                                    height: "100%",
+                                    height: "700px",
                                     border: "none",
-                                    minHeight: "700px",
+                                    display: "block",
                                 }}
                                 title="Cal.com Booking"
-                                className="rounded-xl"
+                                className="w-full"
+                                allow="camera; microphone; geolocation"
                             />
                         </div>
                     </div>
