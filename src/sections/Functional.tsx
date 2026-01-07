@@ -7,18 +7,18 @@ import aiperformance from "@/assets/images/AIperformance.png";
 export default function Functional() {
     return (
         <>
-            <section>
+            <section id="features">
                 <div className="container-custom border-gray-200 border-x border-t-0 border-solid ">
                     <div className=" border-gray-200 bg-white border-x border-l-0 border-r-0  border-solid p-0">
                         <div className="border-x min-h-[4rem]"></div>
-                        <div className="border-x border border-gray-200 min-h-[28rem] md:min-h-[24rem]">
+                        <div className="border-x border border-gray-200 min-h-[24rem] md:min-h-[24rem]">
                             <div className="flex flex-col mt-16 mx-10 md:mx-20">
-                                <h1 className="text-5xl md:text-6xl lg:text-5xl text-center mt-20 font-medium break-normal mx-auto tracking-custom">
+                                <h1 className="text-5xl md:text-6xl lg:text-5xl text-center mt-8 md:mt-16 font-medium break-normal mx-auto tracking-custom">
                                     FIND ISSUES
                                     <br />
                                 </h1>
                                 <div className="flex flex-row">
-                                    <p className="text-left text-xl text-black/50 mt-8 mx-auto">
+                                    <p className="text-center text-xl text-black/50 mt-8 mx-auto">
                                         get{" "}
                                         <b>
                                             <img

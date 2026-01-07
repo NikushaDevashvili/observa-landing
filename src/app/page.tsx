@@ -21,6 +21,7 @@ export default function Home() {
             <TrackersSection />
             <Integration />
             <Booking />
+            <Faqs />
             {/* <LogoTicker /> */}
             <Footer />
         </>

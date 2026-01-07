@@ -16,12 +16,12 @@ import {
 export default function Integration() {
     return (
         <>
-            <section>
+            <section id="integrations">
                 <div className="container-custom-spatial border-x">
                     <div className=" border-gray-200 bg-white border-x border-l-0 border-r-0  border-solid p-0">
                         <div className="min-h-[24rem]">
-                            <div className="flex flex-col items-center gap-4 mt-24 mx-1 md:mx-20">
-                                <h1 className="text-4xl md:text-6xl lg:text-5xl text-center mt-24 font-medium break-normal mx-auto tracking-custom">
+                            <div className="flex flex-col items-center gap-4  mx-1 md:mx-20">
+                                <h1 className="text-4xl md:text-6xl lg:text-5xl text-center mt-36 font-medium break-normal mx-auto tracking-custom">
                                     Best practice monitoring <br />{" "}
                                     <span className="text-slate-600">
                                         with easy SDK installation{" "}

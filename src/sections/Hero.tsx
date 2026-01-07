@@ -27,7 +27,7 @@ export default function Hero() {
     };
 
     return (
-        <section className="relative md:pt-14 sm:pt-8 overflow-x-clip z-40">
+        <section id="home" className="relative md:pt-14 sm:pt-8 overflow-x-clip z-40">
             {/* ✅ Background Layer */}
 
             {/* <div
