@@ -1,9 +1,8 @@
 "use client";
-import Image from "next/image";
-import logoImage from "@/assets/images/LogoB.png";
 import Button from "@/components/Button";
 import { useModal } from "@/components/ModalContext";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import LogoCircle from "@/components/LogoCircle";
 
 const navLinks = [
     { label: "Home", href: "#home" },
@@ -61,11 +60,7 @@ export default function Navbar() {
                             href="#home"
                             onClick={(e) => handleNavClick(e, "#home")}
                         >
-                            <Image
-                                src={logoImage}
-                                alt="Layers logo"
-                                className="h-9 max-h-9 md:h-auto w-auto cursor-pointer"
-                            />
+                            <LogoCircle className="h-9 w-9 cursor-pointer" />
                         </a>
                     </div>
                     <div className="lg:flex flex-justify-center items-center hidden">

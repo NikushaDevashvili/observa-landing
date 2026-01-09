@@ -1,5 +1,4 @@
-import Image from "next/image";
-import logoImage from "@/assets/images/LogoB.png";
+import LogoCircle from "@/components/LogoCircle";
 
 const productLinks = [
     { label: "Feature", href: "#features" },
@@ -85,11 +84,7 @@ export default function Footer() {
                             {/* Logo and Description */}
                             <div className="lg:col-span-1">
                                 <div className="mb-4">
-                                    <Image
-                                        src={logoImage}
-                                        alt="Observa logo"
-                                        className="h-9 max-h-9 md:h-auto w-auto"
-                                    />
+                                    <LogoCircle className="h-9 w-9" />
                                 </div>
                                 <p className="text-sm text-foreground/70 leading-relaxed max-w-xs">
                                     Monitor hallucinations, cost overruns, and
