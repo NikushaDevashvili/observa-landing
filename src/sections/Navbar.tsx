@@ -84,8 +84,8 @@ export default function Navbar() {
                             ))}
                         </nav>
                     </div>
-                    <div className="flex justify-end gap-3 items-center">
-                        <ThemeToggle className="hidden md:inline-flex" />
+                    <div className="flex justify-end gap-8 items-center">
+                        <ThemeToggle className=" md:inline-flex" />
                         <Button
                             variant="primary"
                             className="md:hidden inline-flex rounded-none items-center"

@@ -29,7 +29,7 @@ export default function Hero() {
     return (
         <section
             id="home"
-            className="relative md:pt-14 sm:pt-8 overflow-x-clip z-40 bg-background text-foreground"
+            className="relative md:pt-14 sm:pt-2 overflow-x-clip z-40 bg-background text-foreground"
         >
             {/* ✅ Background Layer */}
 
@@ -128,7 +128,7 @@ export default function Hero() {
                             </Button>
                         </div>
 
-                        <div>
+                        <div className="pt-8">
                             <img
                                 src={heroImage.src}
                                 alt="Functional Image"

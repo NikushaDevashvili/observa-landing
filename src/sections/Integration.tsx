@@ -13,6 +13,7 @@ import {
     ShieldCheck,
 } from "lucide-react";
 import Image from "next/image";
+import sdkimage from "@/assets/images/sdkimage.png";
 import traceview from "@/assets/images/trace-view.png";
 export default function Integration() {
     return (
@@ -72,12 +73,10 @@ export default function Integration() {
                                             </div>
                                             {/* Media */}
                                             <div className="hidden md:flex w-full h-full rounded-xl overflow-hidden items-center justify-center border border-border/70 bg-muted/50">
-                                                <Image
-                                                    src={traceview.src}
+                                                <img
+                                                    src={sdkimage.src}
                                                     alt="Observa trace interface showing error monitoring, spans, tool calls, and LLM interactions"
-                                                    width={800}
-                                                    height={600}
-                                                    className="w-full h-full object-contain rounded-xl"
+                                                    className="w-full h-full object-fill rounded-xl"
                                                 />
                                             </div>
                                         </div>

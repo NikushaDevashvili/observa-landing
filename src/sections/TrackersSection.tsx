@@ -1,5 +1,7 @@
 import monitorimg from "@/assets/images/MonitorImg.png";
 import slackalertimg from "@/assets/images/Slackalerts.png";
+import catchtrackers from "@/assets/images/catchtrackers.png";
+import silentfailures from "@/assets/images/silentfailures.png";
 
 export default function TrackersSection() {
     return (
@@ -10,9 +12,9 @@ export default function TrackersSection() {
                     <div className="border border-t-0 items-center border-border">
                         <div className="min-h-[40rem] sm:min-h-[20rem]">
                             <img
-                                src={monitorimg.src}
+                                src={catchtrackers.src}
                                 alt="Functional Image"
-                                className="w-full h-96 md:h-96 object-cover"
+                                className="w-full h-80 md:h-96 object-cover"
                             />
                         </div>
                         <div className="border border-border border-x"></div>
@@ -31,7 +33,7 @@ export default function TrackersSection() {
                     <div className="border border-t-0 items-center border-border">
                         <div className="">
                             <img
-                                src={slackalertimg.src}
+                                src={silentfailures.src}
                                 alt="Functional Image"
                                 className="w-full h-72 md:h-96 object-cover"
                             />
