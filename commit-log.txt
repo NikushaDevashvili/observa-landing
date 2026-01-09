@@ -1,0 +1,499 @@
+Commit Log - observa-landing
+Generated: 2026-01-07T21:45:11Z
+
+Remote(s):
+origin	https://github.com/NikushaDevashvili/observa-landing.git (fetch)
+origin	https://github.com/NikushaDevashvili/observa-landing.git (push)
+
+==============================
+
+d744c2a5cac8ebc352a2993101db302769fe1427
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2026-01-08T01:21:58+04:00
+
+Update LangChain logo to use currentColor for dark/light mode support
+
+
+---
+2ec4f3ea404d47586f51376ee06da42e232ebb50
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2026-01-08T01:20:02+04:00
+
+Update OpenAI and Anthropic logos to use currentColor for dark/light mode support
+
+
+---
+27d037e286b9e4d5b10d6e9970871a72bf62eb1d
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2026-01-08T01:09:36+04:00
+
+Add dark/light mode theme toggle with full website support
+
+
+---
+34b6657b7aa2adc04ad8248d60e2c0616736f8fc
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2026-01-07T23:02:08+04:00
+
+Update footer links to documentation, add platform logos, and improve Integration section
+
+
+---
+8d8c5239854d800304e24510a168c896726309f4
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2026-01-07T21:47:21+04:00
+
+Fix TypeScript error: move offset variable to function scope
+
+
+---
+89dc4bd90152d1ef43f159cc81c61c2049249d0c
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2026-01-07T21:44:52+04:00
+
+Revert page structure, keep only navigation mapping to existing sections
+
+
+---
+90bf30e8d6f215aa7bb8f6842c75957066f4def3
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2026-01-07T21:42:36+04:00
+
+Add smooth scroll navigation to navbar links and add section IDs
+
+
+---
+9c8a27274e984454c415bdbe54b68a1e036f1d4f
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2026-01-07T21:40:24+04:00
+
+Open Tally modal on Join Waitlist click
+
+
+---
+43edaf3ad9b95f7dc9e8fc63a9c2d31d09db1566
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2026-01-07T21:39:18+04:00
+
+Add smooth scroll from hero to booking section
+
+
+---
+dea81f40398917c63ffee4df01513a3c57c0ce73
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2026-01-07T21:26:41+04:00
+
+cal com section update
+
+
+---
+b47b64596e65a6e1b59ca9176c3710162e39ce08
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2026-01-07T20:40:05+04:00
+
+section styles updated
+
+
+---
+7e5a5bfe32ecd9ffc741890ae16f8a5a66074906
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2026-01-07T20:22:14+04:00
+
+cal com style update
+
+
+---
+2c580ebefa901b6223a9e31ec4feff85854150f3
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2026-01-07T20:15:09+04:00
+
+Style booking section to match landing layout
+
+
+---
+2a3eb1aef2700a95316845dc1a0ebbf351b1c894
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2026-01-07T20:11:32+04:00
+
+cal com component updated
+
+
+---
+d16de93ce1610b1bb0e2d54b76cf94b68a24073a
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2026-01-07T20:07:23+04:00
+
+Use Cal React embed component and init via API
+
+
+---
+2f08b123bb15e65efafb2afa987e60efd007430c
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2026-01-07T20:03:52+04:00
+
+Use Cal.com /embed/ prefix to avoid 404
+
+
+---
+ffd1aefc67e5801ad5f683129e9bc99485b4f9ac
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2026-01-07T20:01:51+04:00
+
+Guard dev script to avoid CORS on production
+
+
+---
+9351a0aba4c63f0b840c44c562a1956746420948
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2026-01-07T20:00:15+04:00
+
+Optimize Cal.com iframe embed - remove unnecessary script, use eager loading
+
+
+---
+9ff427e4850fe76a20ec11feb31cebc620bfd817
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2026-01-07T19:59:34+04:00
+
+Revert to iframe embed with improved attributes
+
+
+---
+815a4a8553947843bb0e6f379d5b383d97451d11
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2026-01-07T19:56:52+04:00
+
+Improve Cal.com booking iframe styling and visibility
+
+
+---
+a0785e067cd0db9f1ca3381876b8a8683900db2a
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2026-01-07T19:54:10+04:00
+
+Update Cal.com embed URL format
+
+
+---
+7b90faa74e416b106f14c545d0c2de283e4e0651
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2026-01-07T19:51:35+04:00
+
+Fix syntax error in Cal.com booking component
+
+
+---
+a891a5042ece438bd6a102fc9519c1b33ee99388
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2026-01-07T19:49:30+04:00
+
+Update Cal.com booking component
+
+
+---
+cc533345c53a2cf4cd686f933406e3a482e88590
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2026-01-07T19:43:23+04:00
+
+Add Cal.com booking embed component
+
+
+---
+9f8bc7e519e8642c64ff5b0b033abe77e0c93b8d
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2025-12-31T15:27:51+04:00
+
+added fixes for mobile devices, updated breakpoints
+
+
+---
+47f4502cf9abe00c7ec4a8c6712f91bf25de9ada
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2025-12-31T06:07:44+04:00
+
+fixed image
+
+
+---
+2b525a6fea4992d9efd7c5bdd5f904c2e048ed6f
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2025-12-31T06:05:49+04:00
+
+Fix critical build error: remove invalid 'items' Tailwind class and unused import
+
+
+---
+f5dd782bd5b18f677035da6541c101649b595191
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2025-12-31T06:02:59+04:00
+
+borders updated
+
+
+---
+349c2eaff3899ca4c04603742d6555d1c524e02a
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2025-12-31T06:01:30+04:00
+
+Fix mt8 typo to mt-8 in Integration component
+
+
+---
+83bb4d47d72577f42385e1c2e05b91990c3eb986
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2025-12-31T06:01:16+04:00
+
+Fix className line breaks that caused Vercel build failures
+
+
+---
+cdce0361f05082e96c663d6aad833f6cbe406cb7
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2025-12-31T05:57:22+04:00
+
+Apply CSS style changes: border updates and spacing adjustments
+
+
+---
+470b398ce78d8c9a7f7c8392f83b60e9f495a7c5
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2025-12-31T05:11:46+04:00
+
+first commit
+
+
+---
+4763ac62e9236c095689fff20be3ce25856175d9
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2025-09-21T23:31:51+04:00
+
+daily summaries component shipped
+
+
+---
+35ddbf94ca74d701a9d2b022c6764de8880257a4
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2025-09-21T17:15:14+04:00
+
+new report component added
+
+
+---
+0d1a186197aea329f29634a5bc3ee4186809289f
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2025-09-21T16:33:45+04:00
+
+daily summaries section started
+
+
+---
+f1526af4893463cc589d6678a9c85bd191a9f1ae
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2025-09-20T03:45:18+04:00
+
+minor visual changes applied
+
+
+---
+6925e20ac38cb9e1cf9a8dc65a4745b2043211dc
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2025-09-19T21:47:13+04:00
+
+tracker section added
+
+
+---
+47bb0f138ebe00bcc1160258493ea38f808dd9f1
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2025-09-19T00:10:28+04:00
+
+adding new section, sdk installation
+
+
+---
+85c88c0452fded70068e98239973450535eac2f0
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2025-09-18T23:10:38+04:00
+
+Functional Section updated
+
+
+---
+f56d181bf9636c0bb28854f6f9fcf9a17abd46ea
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2025-09-18T21:55:52+04:00
+
+minor changes in feature cards
+
+
+---
+edceb9d844c158a834426b396240f323604a979b
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2025-09-17T21:24:21+04:00
+
+feature cards added
+
+
+---
+5553661411526000c0b5081254e9aca49c29977e
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2025-09-17T01:21:12+04:00
+
+dashboard img and stylings added to hero
+
+
+---
+f1c08dd244910a629f8e1eacf446114c86f64a3a
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2025-09-16T23:19:31+04:00
+
+updated styles and fonts
+
+
+---
+2ae1bd6469b38010f1111e752ae6a2755955ef01
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2025-09-16T22:54:44+04:00
+
+updated navbar and hero section
+
+
+---
+4299dcefefb159bd73ad0f5c8841db9b65f5ef81
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2025-09-16T11:41:43+04:00
+
+left align content
+
+
+---
+54c79511a0d9100e3e10953d09b68128a265365d
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2025-08-12T00:20:24+02:00
+
+grids experiment
+
+
+---
+ca998dbeb2f289733978784beca3e7d822c12178
+Author: Nick Devashvili <nikadevashvili@gmail.com>
+Date:   2025-08-10T02:34:37+02:00
+
+umami analytics added
+
+
+---
+bacb81f98b55da7d655f805bb40213fe8bc556c1
+Author: Nick Devashvili <nickdevashvili@Nicks-MacBook-Air.local>
+Date:   2025-07-15T21:09:28+04:00
+
+waitlist form added
+
+
+---
+972e3df037a3b98debf36de9f05bcf6ce6d52a21
+Author: Nick Devashvili <nickdevashvili@Nicks-MacBook-Air.local>
+Date:   2025-07-13T19:42:57+04:00
+
+updated section ordering + scroll to read
+
+
+---
+c652f2c726817f9e260c9445a9cbf87b8c4656ac
+Author: Nick Devashvili <nickdevashvili@Nicks-MacBook-Air.local>
+Date:   2025-07-13T19:34:01+04:00
+
+updated section ordering
+
+
+---
+318350aefc2d7182b2b98aaf71df4c4bc2f968ef
+Author: Nick Devashvili <nickdevashvili@Nicks-MacBook-Air.local>
+Date:   2025-07-13T18:26:01+04:00
+
+preview version updated with optimized imgs
+
+
+---
+25228de2bac0bd455512e74f1959d5d8bd73fa8e
+Author: Nick Devashvili <nickdevashvili@Nicks-MacBook-Air.local>
+Date:   2025-07-13T18:17:27+04:00
+
+preview version
+
+
+---
+8ca29703b648e51d6c39f671a8da5bb1e701ac23
+Author: Nick Devashvili <nickdevashvili@Nicks-MacBook-Air.local>
+Date:   2025-07-13T06:07:52+04:00
+
+fixes for vercel another1
+
+
+---
+0e8634689588d4c8d8113416abdf271a19bf745f
+Author: Nick Devashvili <nickdevashvili@Nicks-MacBook-Air.local>
+Date:   2025-07-13T06:00:23+04:00
+
+fixes for vercel another
+
+
+---
+d688086ef9e09223cdc53e776521799a3b1196eb
+Author: Nick Devashvili <nickdevashvili@Nicks-MacBook-Air.local>
+Date:   2025-07-13T05:55:14+04:00
+
+fixes for vercel
+
+
+---
+0d7a980008cc6d5695528b4d7a1448d11ea20d7d
+Author: Nick Devashvili <nickdevashvili@Nicks-MacBook-Air.local>
+Date:   2025-07-13T05:50:50+04:00
+
+fixes additionalsss
+
+
+---
+e36cd0717e7a2ca0ac9707baba01e9cc5750190a
+Author: Nick Devashvili <nickdevashvili@Nicks-MacBook-Air.local>
+Date:   2025-07-13T05:45:08+04:00
+
+fixes additional
+
+
+---
+3d641cba2d3547c48a19258d8b13ab917c9cc4af
+Author: Nick Devashvili <nickdevashvili@Nicks-MacBook-Air.local>
+Date:   2025-07-13T05:40:12+04:00
+
+changes for vercel
+
+
+---
+e2109b5e0a824cc63a44e35b7efc5efda9ca2e67
+Author: Nick Devashvili <nickdevashvili@Nicks-MacBook-Air.local>
+Date:   2025-07-13T05:29:13+04:00
+
+Initial commit
+
+
+---
+dc1a095b3632bd05286d12b866cb5a6b771ed4b7
+Author: NikushaDevashvili <nikadevashvili@gmail.com>
+Date:   2025-07-13T05:20:16+04:00
+
+Initial commit
+
+
+---
+37b1ae8327d4c32a29397dd6d2a1c15417608704
+Author: Nick Devashvili <nickdevashvili@Nicks-MacBook-Air.local>
+Date:   2025-07-13T05:19:04+04:00
+
+Initial commit
+
+
+---
+
+

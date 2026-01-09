@@ -4,6 +4,7 @@ import slacklogo from "@/assets/images/slacklogo.png";
 import performanceimg from "@/assets/images/Performance.png";
 import slackmessageimg from "@/assets/images/SlackMessage.png";
 import aiperformance from "@/assets/images/AIperformance.png";
+import costsimage from "@/assets/images/costsimage.png";
 export default function Functional() {
     return (
         <>
@@ -52,7 +53,7 @@ export default function Functional() {
                                     <img
                                         src={aiperformance.src}
                                         alt="AI Performance Image"
-                                        className="w-full h-56 md:h-64 object-cover"
+                                        className="w-full h-54 md:h-64 object-cover"
                                     />
                                 </div>
                             </div>
@@ -69,9 +70,9 @@ export default function Functional() {
                                 </div>
                                 <div className="pt-6">
                                     <img
-                                        src={performanceimg.src}
+                                        src={costsimage.src}
                                         alt="Functional Image"
-                                        className="w-full h-56 md:h-72 object-cover"
+                                        className="w-full h-54 md:h-72 object-cover"
                                     />
                                 </div>
                             </div>
@@ -90,7 +91,7 @@ export default function Functional() {
                                     <img
                                         src={slackmessageimg.src}
                                         alt="Functional Image"
-                                        className="w-full h-56 md:h-64 object-cover"
+                                        className="w-full h-54 md:h-64 object-cover"
                                     />
                                 </div>
                             </div>

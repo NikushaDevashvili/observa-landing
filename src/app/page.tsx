@@ -10,6 +10,7 @@ import TrackersSection from "@/sections/TrackersSection";
 import Summaries from "@/sections/Summaries";
 import Booking from "@/sections/Booking";
 import Footer from "@/sections/Footer";
+import TraceView from "@/sections/TraveView";
 
 export default function Home() {
     return (
@@ -18,6 +19,7 @@ export default function Home() {
             <Hero />
             <LogoTicker />
             <Functional />
+            <TraceView />
             <Summaries />
             <TrackersSection />
             <Integration />

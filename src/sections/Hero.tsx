@@ -6,7 +6,7 @@ import { PointerHighlight } from "@/components/ui/pointer-highlight";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
-import heroImage from "@/assets/images/HeroDashboardLight.png";
+import heroImage from "@/assets/images/heroimage.png";
 import PixelBlast from "@/components/PixelBlast";
 import { useModal } from "@/components/ModalContext";
 
@@ -68,9 +68,7 @@ export default function Hero() {
                     </div>
                 </div> */}
                     <div className="py-16 lg:px-32">
-                        <h1
-                            className="text-5xl md:text-6xl lg:text-5xl lg:font-roman text-left mt-20 font-medium break-normal w-full tracking-custom"
-                        >
+                        <h1 className="text-5xl md:text-6xl lg:text-5xl lg:font-roman text-left mt-20 font-medium break-normal w-full tracking-custom">
                             AI failures happen.
                             <br />
                             {/* <PointerHighlight
@@ -130,11 +128,11 @@ export default function Hero() {
                             </Button>
                         </div>
 
-                        <div className="mt-12 bg-muted border-solid border-2 border-border">
+                        <div>
                             <img
                                 src={heroImage.src}
                                 alt="Functional Image"
-                                className="z-10 w-full h-2/4 md:h-2/4 sm:h-full object-cover p-8"
+                                className="z-10 w-auto h-2/4 sm:h-auto object-fit p-0"
                             />
                         </div>
                     </div>
