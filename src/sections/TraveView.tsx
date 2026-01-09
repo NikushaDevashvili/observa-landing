@@ -1,5 +1,6 @@
 import Image from "next/image";
 import traceview from "@/assets/images/traceview.png";
+import traceviewMobile from "@/assets/images/traceview-mobile.png";
 
 export default function CatchDetails() {
     return (
@@ -25,12 +26,18 @@ export default function CatchDetails() {
                         </h2>
                     </div>
                     <div className="border border-y-0 border-border bg-[#121212]">
-                        <div className="">
-                            <img
-                                src={traceview.src}
-                                alt="Observa trace interface showing detailed error monitoring, spans, tool calls, and LLM interactions with error details"
-                                className="w-full h-auto sm:h-96 object-fill"
-                            />
+                        <div className="w-full">
+                            <picture>
+                                <source
+                                    media="(max-width: 768px)"
+                                    srcSet={traceviewMobile.src}
+                                />
+                                <img
+                                    src={traceview.src}
+                                    alt="Observa trace interface showing detailed error monitoring, spans, tool calls, and LLM interactions with error details"
+                                    className="w-full h-auto min-h-[500px] md:min-h-[700px] object-contain"
+                                />
+                            </picture>
                         </div>
                     </div>
                 </div>
