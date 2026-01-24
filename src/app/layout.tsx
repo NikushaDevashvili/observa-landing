@@ -11,7 +11,24 @@ const jetbrainsMono = JetBrains_Mono({
     display: "swap",
 });
 
-const isDev = process.env.NODE_ENV === "development";
+export const metadata = {
+    title: "Observa — Open source observability platform for LLM's",
+    description:
+        "Observa is a open source observability platform for LLM's it helps you track and analyze your LLM's performance and usage.",
+    openGraph: {
+        title: "Observa — Open source observability platform for LLM's",
+        description:
+            "Observa is a open source observability platform for LLM's it helps you track and analyze your LLM's performance and usage",
+        url: "https://observa-landing.vercel.app/",
+        siteName: "Observa",
+        type: "website",
+    },
+    twitter: {
+        title: "Observa — Open source observability platform for LLM's",
+        description:
+            "Observa is a open source observability platform for LLM's it helps you track and analyze your LLM's performance and usage",
+    },
+};
 
 export default function RootLayout({
     children,
@@ -21,20 +38,18 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
             <head>
-                {isDev && (
-                    <script
-                        defer
-                        src="http://localhost:3000/script.js"
-                        data-website-id="64ddb8d9-881b-43f5-b4d1-6410e96bfb84"
-                    ></script>
-                )}
+                <script
+                    defer
+                    src="http://localhost:3000/script.js"
+                    data-website-id="64ddb8d9-881b-43f5-b4d1-6410e96bfb84"
+                ></script>
             </head>
             <body
                 className={`${jetbrainsMono.variable} font-sans antialiased bg-background text-foreground`}
             >
                 <ThemeProvider
                     attribute="class"
-                    defaultTheme="system"
+                    defaultTheme="dark"
                     enableSystem
                     disableTransitionOnChange
                 >
