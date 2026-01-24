@@ -4,7 +4,6 @@ import "./globals.css";
 import { ModalProvider } from "@/components/ModalContext";
 import GlobalModal from "@/components/GlobalModal";
 import { ThemeProvider } from "@/components/theme-provider";
-import { Analytics } from "@vercel/analytics/next";
 
 const jetbrainsMono = JetBrains_Mono({
     variable: "--font-jetbrains-mono",
