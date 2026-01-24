@@ -59,6 +59,7 @@ export default function RootLayout({
                         <GlobalModal />
                     </ModalProvider>
                 </ThemeProvider>
+                <Analytics />
             </body>
         </html>
     );
