@@ -19,14 +19,17 @@ export default function TrackersSection() {
                         </div>
                         <div className="border border-border border-x"></div>
                         <div className="py-8">
-                            <h1 className="text-2xl px-8">Set Trackers</h1>
+                            <h1 className="text-2xl px-8">
+                                Turn noisy logs into clear signals
+                            </h1>
                         </div>
                         <div className="border border-border border-t-0"></div>
                         <div className="py-6 ">
                             <h1 className="text-md py-6 px-8">
-                                Turn raw logs into clear insights that help you
-                                debug faster, improve reliability, and optimize
-                                models
+                                Define trackers once (context drop, low score,
+                                failed tool call) and let Observa flag every
+                                matching event, so you&apos;re not manually
+                                combing through logs.
                             </h1>
                         </div>
                     </div>
@@ -41,17 +44,16 @@ export default function TrackersSection() {
                         <div className="border border-border border-t-0"></div>
                         <div className="py-8">
                             <h1 className="text-2xl px-8">
-                                Catch Silent Failures
+                                Catch silent failures your metrics miss
                             </h1>
                         </div>
                         <div className="border border-border border-t-0"></div>
                         <div className="py-6 ">
                             <h1 className="text-md py-6 px-8">
-                                Don&apos;t wait for user complaints.
-                                Automatically detect &quot;silent&quot; errors
-                                like context drops and logic failures, and get
-                                the diagnostic data you need to fix them
-                                immediately.
+                                Alert on patterns normal monitoring ignores:
+                                missing context, wrong tools, partial answers,
+                                or repeated clarifications—even when the request
+                                returns 200 OK.
                             </h1>
                         </div>
                     </div>

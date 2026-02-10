@@ -13,16 +13,16 @@ export default function CatchDetails() {
                             className="text-[40px] font-medium text-center"
                             style={{ letterSpacing: "-2.8px" }}
                         >
-                            CATCH EVEN TINIEST DETAIL
+                            From alert to root cause in minutes
                         </h1>
                         <h2
                             className="text-[20px] text-center py-4 text-foreground/70 max-w-3xl leading-[28px]"
                             style={{ letterSpacing: "-1.44px" }}
                         >
-                            We send you alerts when your AI misbehaves and links
-                            straight to the events so you can dig into the
-                            conversations or traces, understand the root cause,
-                            and fix it—fast.
+                            Every alert links to the full trace: prompts, tool
+                            calls, external APIs, and model responses. Filter by
+                            user, route, or error code and see exactly where the
+                            request went wrong.
                         </h2>
                     </div>
                     <div className="border border-y-0 border-border bg-[#121212]">

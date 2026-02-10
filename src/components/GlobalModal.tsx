@@ -20,7 +20,7 @@ export default function GlobalModal() {
                     width="100%"
                     height="700"
                     frameBorder="0"
-                    title="Join Waitlist"
+                    title="Join waitlist (developer preview)"
                     className="rounded-xl"
                 />
             </div>

@@ -87,9 +87,10 @@ export default function Footer() {
                                     <LogoCircle className="h-9 w-9" />
                                 </div>
                                 <p className="text-sm text-foreground/70 leading-relaxed max-w-xs">
-                                    Monitor hallucinations, cost overruns, and
-                                    performance drifts in real time — with a
-                                    single, standardized dashboard.
+                                    Observe every LLM request—logs, traces, and
+                                    performance—in one place, so engineering
+                                    teams can ship reliable AI features with
+                                    confidence.
                                 </p>
                             </div>
 
