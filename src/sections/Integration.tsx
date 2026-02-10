@@ -27,9 +27,9 @@ export default function Integration() {
                         <div className="min-h-[24rem]">
                             <div className="flex flex-col items-center gap-4  mx-1 md:mx-20">
                                 <h1 className="text-4xl md:text-6xl lg:text-5xl text-center mt-36 font-medium break-normal mx-auto tracking-custom">
-                                    Best-practice LLM monitoring{" "}
+                                    Best practice monitoring <br />{" "}
                                     <span className="text-foreground/70">
-                                        with a few lines of code
+                                        with easy SDK installation{" "}
                                     </span>
                                 </h1>
                                 <div className="flex items-center justify-center ">
@@ -48,7 +48,7 @@ export default function Integration() {
                                                                 description,
                                                                 icon: Icon,
                                                             },
-                                                            index,
+                                                            index
                                                         ) => (
                                                             <AccordionItem
                                                                 key={index}
@@ -67,7 +67,7 @@ export default function Integration() {
                                                                     }
                                                                 </AccordionContent>
                                                             </AccordionItem>
-                                                        ),
+                                                        )
                                                     )}
                                                 </Accordion>
                                             </div>
@@ -95,35 +95,38 @@ export default function Integration() {
 const features = [
     {
         icon: Activity,
-        title: "Full traces for every LLM and tool call.",
+        title: "Monitor AI Performance",
         description:
-            "Monitor AI performance with complete visibility into each request.",
+            "Track errors, drifts, and response quality in real time so you always know how your AI is performing.",
     },
     {
         icon: DollarSign,
-        title: "Per-endpoint and per-model cost tracking with budgets and alerts.",
+        title: "Control Costs",
         description:
-            "Control costs with granular spend visibility and guardrails.",
+            "See exactly where your AI spend is going, catch runaway usage, and stay on top of your budget.",
     },
     {
         icon: BarChart3,
-        title: "Query traces by user, route, model, or tag to find broken flows fast.",
+        title: "Actionable Insights",
         description:
-            "Actionable insights to debug faster and improve reliability.",
+            "Turn raw logs into clear insights that help you debug faster, improve reliability, and optimize models.",
     },
     {
         icon: Bell,
-        title: "Slack alerts wired to the same signals your SREs care about: error rate, latency, and anomaly trackers.",
-        description: "Instant alerts so you can act before users notice.",
+        title: "Instant Alerts",
+        description:
+            "Get notified in Slack or email the moment something goes wrong, so you can act before users notice.",
     },
     {
         icon: Plug,
-        title: "Drop-in SDKs for Node.js, Python, and TypeScript; works with OpenAI, Anthropic, Google, and LangChain.",
-        description: "Seamless integration with a few lines of code.",
+        title: "Seamless Integration",
+        description:
+            "Drop in a simple SDK or API and start monitoring immediately — no complex setup required.",
     },
     {
         icon: ShieldCheck,
-        title: "Fix failures before they become support tickets and churn.",
-        description: "Protect user trust with reliable AI experiences.",
+        title: "Protect User Trust",
+        description:
+            "Deliver reliable AI experiences that keep customers confident and engaged with your product.",
     },
 ];

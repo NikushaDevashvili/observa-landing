@@ -14,11 +14,13 @@ export default function Summaries() {
                 <div className="container-custom-spatial">
                     <div className="border border-t-0 border-border flex flex-col items-center py-24 px-4">
                         <h1 className="text-4xl">
-                            <b>Daily report for your AI stack</b>
+                            <b>DAILY SUMMARIES</b>
                         </h1>
-                        <h2 className="text-lg text-center py-4 text-foreground/70 max-w-3xl">
-                            Each morning, your team gets a summary of what
-                            broke, what got slower, and where users struggled.
+                        <h2 className="text-lg text-center py-4 text-foreground/70">
+                            We send you alerts when your AI misbehaves and links
+                            straight to the events so you can <br></br>dig into
+                            the conversations or traces, understand the root
+                            cause, and fix it—fast.
                         </h2>
                     </div>
                     <div className="border py-12 border-y-0 border-border bg-gradient-to-b from-muted to-background">
@@ -39,29 +41,18 @@ export default function Summaries() {
                             </div>
                             <div className="p-4 py-8 border border-y-0 bg-background border-border">
                                 <h1 className="text-xl">🟢 Wins</h1>
-                                <ul className="list-disc list-inside space-y-1">
-                                    <li>
-                                        Top failing flows (by error count and
-                                        impact)
-                                    </li>
-                                    <li>
-                                        Endpoints with rising latency and
-                                        timeouts
-                                    </li>
-                                    <li>
-                                        Rate limit incidents and dropped
-                                        requests
-                                    </li>
-                                    <li>Cost anomalies by model or feature</li>
-                                </ul>
+                                <p>
+                                    Users liked the assistant&apos;s tone and
+                                    appreciated the life advice.
+                                </p>
                             </div>
                             <div className="p-4 py-8 border border-b-0 bg-background border-border">
                                 <h1 className="text-xl">🔴 Issues</h1>
                                 <p>
-                                    Users abandoned 17% of conversations after
-                                    repeated clarification questions. Common
-                                    patterns: context loss, incomplete actions,
-                                    and irrelevant answers.
+                                    Common Patterns: context retention, response
+                                    quality, and task completion Top Issues:
+                                    Forgetting (+50%), User Frustration (-20%),
+                                    Laziness
                                 </p>
                             </div>
                             <div className="grid md:grid-cols-3 grid-cols-1 bg-background">

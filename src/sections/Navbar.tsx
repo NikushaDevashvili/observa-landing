@@ -8,7 +8,7 @@ const navLinks = [
     { label: "Home", href: "#home" },
     { label: "Features", href: "#features" },
     { label: "Integrations", href: "#integrations" },
-    { label: "See it on real traffic", href: "#booking" },
+    { label: "Book a demo", href: "#booking" },
 ];
 
 export default function Navbar() {
@@ -16,7 +16,7 @@ export default function Navbar() {
 
     const handleNavClick = (
         e: React.MouseEvent<HTMLAnchorElement>,
-        href: string,
+        href: string
     ) => {
         e.preventDefault();
         const targetId = href.replace("#", "");
@@ -37,7 +37,7 @@ export default function Navbar() {
         } else if (targetId === "faqs") {
             // If FAQs section doesn't exist, scroll to footer
             const footer = document.querySelector(
-                "footer, section:last-of-type",
+                "footer, section:last-of-type"
             );
             if (footer) {
                 const footerPosition =
@@ -86,7 +86,7 @@ export default function Navbar() {
                             className="md:hidden inline-flex rounded-none items-center"
                             onClick={open}
                         >
-                            Join waitlist (developer preview)
+                            Join Waitlist
                         </Button>
                         {/* <Button
                             variant="secondary"
@@ -99,7 +99,7 @@ export default function Navbar() {
                             className="hidden rounded-none md:inline-flex items-center"
                             onClick={open}
                         >
-                            Join waitlist (developer preview)
+                            Join Waitlist
                         </Button>
                     </div>
                 </div>

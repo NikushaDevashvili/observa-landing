@@ -69,21 +69,20 @@ export default function Hero() {
                 </div> */}
                     <div className="py-16 lg:px-32">
                         <h1 className="text-5xl md:text-6xl lg:text-5xl lg:font-roman text-left mt-20 font-medium break-normal w-full tracking-custom">
-                            Your LLM is breaking in production.
+                            AI failures happen.
                             <br />
                             {/* <PointerHighlight
                                 rectangleClassName=" border-neutral-100 leading-loose"
                                 pointerClassName="text-black h-3 w-3"
                                 containerClassName="inline-block mr-"
                             > */}
-                            <span>You just can&apos;t see it.</span>
+                            <span>Catch them first.</span>
                             {/* </PointerHighlight> */}
                         </h1>
                         <p className="text-left text-xl text-foreground/70 mt-8 mx-auto">
-                            Observa gives developers logs, traces, and
-                            performance metrics for every LLM call, so you can
-                            catch failures, slowdowns, and cost spikes before
-                            users complain.
+                            Monitor hallucinations, cost overruns, and
+                            performance drifts <br></br>in real time — with a
+                            single, standardized dashboard.
                         </p>
                         {/* <form className="flex border border-white/15 rounded-full p-2 mt-8 max-w-lg mx-auto">
                     <input
@@ -117,14 +116,14 @@ export default function Hero() {
                                 className="text-md rounded-none px-4 py-6"
                                 onClick={handleJoinWaitlistClick}
                             >
-                                Join waitlist (developer preview)
+                                Join Waitlist
                             </Button>
                             <Button
                                 variant="ghost"
                                 className="text-md rounded-none  text-foreground outline-dashed -outline-offset-1 outline-border px-4 py-6"
                                 onClick={handleRequestDemoClick}
                             >
-                                See it on real traffic
+                                Request a Demo
                                 <ArrowRight />
                             </Button>
                         </div>

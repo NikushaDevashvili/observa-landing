@@ -1,5 +1,6 @@
 "use client";
 import hotjarimg from "@/assets/images/Hotjarimg.png";
+import slacklogo from "@/assets/images/slacklogo.png";
 import performanceimg from "@/assets/images/Performance.png";
 import slackmessageimg from "@/assets/images/SlackMessage.png";
 import aiperformance from "@/assets/images/AIperformance.png";
@@ -14,14 +15,23 @@ export default function Functional() {
                         <div className="border-x border border-border min-h-[24rem] md:min-h-[24rem]">
                             <div className="flex flex-col mt-16 mx-10 md:mx-20">
                                 <h1 className="text-5xl md:text-6xl lg:text-5xl text-center mt-8 md:mt-16 font-medium break-normal mx-auto tracking-custom">
-                                    Find failures before your users do
+                                    FIND ISSUES
+                                    <br />
                                 </h1>
                                 <div className="flex flex-row">
-                                    <p className="text-center text-xl text-foreground/70 mt-8 mx-auto max-w-3xl">
-                                        Stop guessing why prompts misbehave.
-                                        Observa shows every error, slowdown, and
-                                        broken tool call in one place, with
-                                        traces linked to the exact request.
+                                    <p className="text-center text-xl text-foreground/70 mt-8 mx-auto">
+                                        get{" "}
+                                        <b>
+                                            <img
+                                                src={slacklogo.src}
+                                                alt="Functional Image"
+                                                className="inline-block h-6 object-cover"
+                                            />{" "}
+                                            <u>
+                                                <i>slack notifications</i>
+                                            </u>
+                                        </b>{" "}
+                                        when your AI product fails
                                     </p>
                                 </div>
                             </div>
@@ -30,14 +40,13 @@ export default function Functional() {
                         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
                             <div className="flex flex-col px-6 py-12 bg-muted border border-border">
                                 <div className="text-2xl">
-                                    See every failed and slow LLM request
+                                    Monitor AI performance
                                 </div>
                                 <div className="mt-4 pb-4">
                                     <p className="text-md text-muted-foreground">
-                                        Trace each request across tools, models,
-                                        and services so you can reproduce bugs
-                                        instead of relying on screenshots from
-                                        users.
+                                        Get real-time visibility into errors,
+                                        drifts, and hidden failures so you
+                                        always know how your AI is behaving.
                                     </p>
                                 </div>
                                 <div className="pt-6">
@@ -50,13 +59,13 @@ export default function Functional() {
                             </div>
                             <div className="flex flex-col px-6 py-12 bg-muted border border-border">
                                 <div className="text-2xl flex-1">
-                                    Catch cost spikes early
+                                    Track costs & budgets
                                 </div>
                                 <div className="mt-4 pb-4">
                                     <p className="text-md text-muted-foreground">
-                                        See spend by model, feature, and team.
-                                        Spot noisy endpoints and runaway loops
-                                        before they burn your budget.
+                                        Stay ahead of runaway usage. See exactly
+                                        where your AI overspends and keep costs
+                                        under control.
                                     </p>
                                 </div>
                                 <div className="pt-6">
@@ -69,14 +78,13 @@ export default function Functional() {
                             </div>
                             <div className="flex flex-col  px-6 py-12 bg-muted border border-border">
                                 <div className="text-2xl flex-1">
-                                    Get paged when LLMs misbehave
+                                    Get instant alerts
                                 </div>
                                 <div className="mt-4 pb-4">
                                     <p className="text-md text-muted-foreground">
-                                        Send alerts to Slack when retries
-                                        explode, errors spike, or latency
-                                        drifts, so on-call engineers know
-                                        exactly where to look.
+                                        Receive Slack notifications the moment
+                                        something breaks, so your team can act
+                                        before users notice.
                                     </p>
                                 </div>
                                 <div className="pt-6">
